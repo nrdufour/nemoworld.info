@@ -1,0 +1,18 @@
+---
+baseurl: "http://nemoworld.info/"
+languageCode: "en-us"
+title: "Nemo~world"
+
+permalinks:
+    blog: /blog/:year/:month/:day/:title/
+    project: /project/:title
+
+metaDataFormat: "yaml"
+
+theme: "nemo2016"
+
+pygmentsuseclasses: false
+pygmentsstyle: pastie
+
+taxonomies:
+    topic: topics
