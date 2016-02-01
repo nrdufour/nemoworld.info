@@ -12,18 +12,13 @@
         </div>
         <div id="navbar" class="navbar-collapse navbar-right collapse">
           <ul class="nav navbar-nav">
-            <li {{ if or (eq .Title "Blogs") (eq .Section "blog") }}class="active"{{ end }}>
-              <a href="/blog">Blog</a>
-            </li>
-            <li {{ if or (eq .Title "Projects") (eq .Section "project") }}class="active"{{ end }}>
-              <a href="/project">Projects</a>
-            </li>
-            <li {{ if or (eq .Title "Notes") (eq .Section "note") }}class="active"{{ end }}>
-              <a href="/note">Notes</a>
-            </li>
-            <li {{ if eq .Title "About" }}class="active"{{ end }}>
-              <a href="/about">About</a>
-            </li>
+            {{ $title := .Title }}
+            {{ $section := .Section }}
+            {{ range .Site.Menus.main }}
+              <li {{ if or (eq $title .Name) (eq $section .Identifier) }}class="active"{{ end }}>
+                <a href="{{.URL}}">{{.Name}}</a>
+              </li>
+            {{ end }}
           </ul>
         </div><!--/.nav-collapse -->
       </div>
