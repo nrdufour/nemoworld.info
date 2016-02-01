@@ -1,9 +1,8 @@
 ---
 date: 2015-12-10T20:45:39-05:00
-title: Alfresco Rules
+title: Rules
 slug: alfresco/rules
-topics:
-    - Alfresco
+topics: Alfresco
 ---
 
 # Creating a rule

@@ -1,9 +1,8 @@
 ---
 date: 2015-12-10T19:00:20-05:00
-title: Alfresco Import
+title: Import
 slug: alfresco/import
-topics:
-    - Alfresco
+topics: Alfresco
 ---
 
 So far the best example is this page: <http://www.giuseppeurso.eu/en/massive-bulk-import-in-alfresco-using-curl>.

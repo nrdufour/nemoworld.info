@@ -67,3 +67,7 @@ footer p {
 .mono {
     font-family: 'Inconsolata';
 }
+
+.page-header {
+    margin-bottom: 40px;
+}

@@ -1,9 +1,8 @@
 ---
 date: 2015-12-10T19:00:20-05:00
-title: Alfresco Backup
+title: Backup
 slug: alfresco/backup
-topics:
-    - Alfresco
+topics: Alfresco
 ---
 
 Another sensitive area for Alfresco: how to properly back it up.

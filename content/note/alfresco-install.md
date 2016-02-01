@@ -1,9 +1,8 @@
 ---
 date: 2015-12-10T20:45:39-05:00
-title: Alfresco Install
+title: Install
 slug: alfresco/install
-topics:
-    - Alfresco
+topics: Alfresco
 ---
 
 Here are some notes to install Alfresco 4.x and above.

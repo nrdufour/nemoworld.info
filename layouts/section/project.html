@@ -2,31 +2,27 @@
 
 <div class="container">
 
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="note-title"><i class="fa fa-lightbulb-o fa-pull-left"></i>Projects</h1>
-        </div>
+    <div class="page-header">
+        <h1 class="text-center">Projects</h1>
     </div>
 
     {{ range .Data.Pages.GroupByParam "project_type" }}
-    <h3 class="bg-primary project-type text-center">{{ .Key }}</h3>
+    <h3 class="bg-info project-type">{{ .Key }}</h3>
     <div class="row">
     {{ range .Pages }}
          <div class="col-lg-6 col-md-6">
-            <div class="project-tout">
-                <div class="row">
-                    <div class="col-lg-2 col-md-2 hidden-xs hidden-sm">
-                        <img class="img-responsive" src="/images/projects/{{ .Params.project_icon }}" />
-                        <br/>
-                        <a class="btn btn-default btn-sm center-block" href="{{ .RelPermalink }}" role="button">More</a>
-                    </div>
-                    <div class="col-lg-10 col-md-10">
-                        <h2>{{ .Title }}</h2>
-                        <p>Started: <span class="mono">{{ .Params.started }}</span></p>
-                        <blockquote>{{ .Params.desc }}</blockquote>
-                        <a class="btn btn-default btn-sm center-block visible-xs" href="{{ .RelPermalink }}" role="button">More</a>
-                        <a class="btn btn-default btn-sm center-block visible-sm" href="{{ .RelPermalink }}" role="button">More</a>
-                    </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 hidden-xs hidden-sm">
+                    <img class="img-responsive" src="/images/projects/{{ .Params.project_icon }}" />
+                    <br/>
+                    <a class="btn btn-default btn-sm center-block" href="{{ .RelPermalink }}" role="button">More</a>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <h2>{{ .Title }}</h2>
+                    <p>Started: <span class="mono">{{ .Params.started }}</span></p>
+                    <blockquote>{{ .Params.desc }}</blockquote>
+                    <a class="btn btn-default btn-sm center-block visible-xs" href="{{ .RelPermalink }}" role="button">More</a>
+                    <a class="btn btn-default btn-sm center-block visible-sm" href="{{ .RelPermalink }}" role="button">More</a>
                 </div>
             </div>
         </div>

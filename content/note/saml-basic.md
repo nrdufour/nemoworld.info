@@ -1,9 +1,8 @@
 ---
 date: 2015-12-11T11:50:15-05:00
-title: SAML Basics
-slug: saml/basic
-topics:
-    - SAML
+title: Basics
+slug: saml/basics
+topics: SAML
 ---
 
 SAML is a protocol to authenticate a user across several systems/services.

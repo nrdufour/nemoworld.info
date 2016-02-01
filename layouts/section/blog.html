@@ -2,10 +2,8 @@
 
 <div class="container">
 
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="note-title"><i class="fa fa-rss fa-pull-left"></i>Latest posts</h1>
-        </div>
+    <div class="page-header">
+        <h1 class="text-center">Latest posts</h1>
     </div>
 
     {{ range .Data.Pages.GroupByDate "2006" }}
