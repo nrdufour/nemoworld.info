@@ -5,5 +5,6 @@ project_type: Hardware
 title: Wireless Sensor
 started: 2011
 desc: An ongoing project to create a network of wireless sensors reporting temperature/humidity/etc inside/outside.
+weight: 90
 ---
 

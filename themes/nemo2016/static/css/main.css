@@ -71,3 +71,14 @@ footer p {
 .page-header {
     margin-bottom: 40px;
 }
+
+.main-banner {
+    background-image:url("/images/sensor_version_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: right;
+    color: white;
+    border-radius: 15px 50px;
+    text-shadow: 1px 0 5px #5A5A5A;
+    margin-top: 40px;
+}
