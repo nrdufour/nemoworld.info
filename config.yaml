@@ -3,7 +3,7 @@ baseurl: "http://nemoworld.info/"
 languageCode: "en-us"
 title: "Nemo~world"
 
-pluralizeListTitles: false
+pluralizeListTitles: true
 
 permalinks:
     blog: /blog/:year/:month/:day/:title/
@@ -26,12 +26,12 @@ menu:
           Weight: -110
           Identifier: "blog"
           URL: "/blog/"
-        - Name: "Project"
+        - Name: "Projects"
           Pre: "<i class='fa fa-heart'></i>"
           Weight: -100
           Identifier: "project"
           URL: "/project/"
-        - Name: "Note"
+        - Name: "Notes"
           Pre: "<i class='fa fa-heart'></i>"
           Weight: -90
           Identifier: "note"

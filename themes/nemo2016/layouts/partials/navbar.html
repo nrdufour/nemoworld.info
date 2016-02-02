@@ -15,7 +15,8 @@
             {{ $title := .Title }}
             {{ $section := .Section }}
             {{ range .Site.Menus.main }}
-              <li {{ if or (eq $title .Name) (eq $section .Identifier) }}class="active"{{ end }}>
+              {{ $name_with_s := .Name | printf "%ss" }}
+              <li {{ if or (or (eq $title .Name) (eq $section .Identifier)) (eq $title $name_with_s) }}class="active"{{ end }}>
                 <a href="{{.URL}}">{{.Name}}</a>
               </li>
             {{ end }}
