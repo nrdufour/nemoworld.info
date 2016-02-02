@@ -10,4 +10,4 @@ title: Today's harvest - 2012/10/14
 
 Today's harvest: last green beans and hot peppers!
 
-![20121014 harvest](/img/harvest-20121014.jpg)
+{{< image "/images/blogs/harvest-20121014.jpg" >}}

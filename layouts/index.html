@@ -4,7 +4,7 @@
 
     <div class="row main-banner">
         <div class="col-md-12">
-            <h1 style="color: white;">~Nemoworld~<small><br/>A few notes</small></h1>
+            <h1 style="color: white;">Nemo<i class="fa fa-spin">~</i>world<small><br/>A few notes</small></h1>
         </div>
     </div>
 
@@ -14,7 +14,7 @@
             {{ range first 5 (where .Data.Pages.ByDate "Section" "blog").Reverse }}
             <p>
                 <span class="post_date badge badge-inverse"> {{ dateFormat "01 Jan 2006" .Date }}</span> 
-                <a href="{{ .URL }}">{{ .Title }}</a>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
             </p>
             {{ end }}
         </div>
