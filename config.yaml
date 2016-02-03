@@ -7,6 +7,7 @@ pluralizeListTitles: true
 
 permalinks:
     blog: /blog/:year/:month/:day/:title/
+    archive: /oldblog/:year/:month/:day/:title/
     project: /project/:title
 
 metaDataFormat: "yaml"
