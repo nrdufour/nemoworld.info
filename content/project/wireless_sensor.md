@@ -8,3 +8,10 @@ desc: An ongoing project to create a network of wireless sensors reporting tempe
 weight: 90
 ---
 
+The idea is to create a network of simple wireless sensors reporting mostly the temperature, humidity and pressure (or even light).
+
+The first step was to create to a small prototype:
+
+{{< image "/images/projects/sensor_version_v1.jpg" >}}
+
+TODO: add the BOM, code, repo url, schema.

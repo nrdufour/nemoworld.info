@@ -8,3 +8,6 @@ desc: Discrete event simulator written in Erlang. Still a lot to finish.
 weight: 50
 ---
 
+Similar is an erlang application providing a discrete event simulation engine.
+
+Github repository: [here](https://github.com/nrdufour/similar)

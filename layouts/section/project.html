@@ -9,7 +9,8 @@
     {{ range .Data.Pages.GroupByParam "project_type" }}
     <h3 class="bg-info project-type">{{ .Key }}</h3>
     <div class="row">
-    {{ range .Pages }}
+        {{ range .Pages.GroupByParam "started" "desc" }}
+            {{ range .Pages }}
          <div class="col-lg-6 col-md-6">
             <div class="row">
                 <div class="col-lg-2 col-md-2 hidden-xs hidden-sm">
@@ -26,7 +27,8 @@
                 </div>
             </div>
         </div>
-    {{ end }}
+            {{ end }}
+        {{ end }}
     </div>
     {{ end }}
 

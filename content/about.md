@@ -8,4 +8,6 @@ image: "capnemo.png"
 
 # Nicolas R Dufour
 
-TBD
+Software Architect with a foot in geophysics and another for weird physics theories.
+
+A lot of [projects](/project/) in the TODO list. A few already done and far more to finish obviously.

@@ -4,7 +4,7 @@
 
     <div class="row main-banner">
         <div class="col-md-12">
-            <h1 style="color: white;">Nemo<i class="fa fa-spin">~</i>world<small><br/>A few notes</small></h1>
+            <h1 style="color: white;">Nemo<i class="fa fa-spin">~</i>world<small><br/>A few notes on the net</small></h1>
         </div>
     </div>
 
@@ -13,23 +13,21 @@
             <h3><a href="/blog/"><span class="glyphicon glyphicon-chevron-right"></span>Latest news</a></h3>
             {{ range first 5 (where .Data.Pages.ByDate "Section" "blog").Reverse }}
             <p>
-                <span class="post_date badge badge-inverse"> {{ dateFormat "01 Jan 2006" .Date }}</span> 
+                <span class="post_date badge badge-inverse mono"> {{ dateFormat "01 Jan 2006" .Date }}</span> 
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
             </p>
             {{ end }}
         </div>
         <div class="col-md-6">
             <h3><a href="/note/"><span class="glyphicon glyphicon-chevron-right"></span>Notes</a></h3>
-            <p>
-                Stack of bits and pieces of information I wish to keep and share. <br/> More or less ordered ;-)
-            </p>
+            <p>Stack of bits and pieces of information I wish to keep and share.</p>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-12">
             <h3><a href="/project/"><span class="glyphicon glyphicon-chevron-right"></span>Current projects</a></h3>
-            <p>Opensource author for over 17 years, I try to publish as much as I can if it can help anybody else.</p>
+            <p>Opensource author for over 17 years, I try to publish as much as I can. <br/> Here are 3 of the most recent ones I've worked on:</p>
             <div class="row">
                 {{ range first 3 (where .Data.Pages "Section" "project").Reverse }}
                 <div class="col-lg-4">

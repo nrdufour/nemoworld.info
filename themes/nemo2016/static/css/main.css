@@ -42,10 +42,7 @@ footer p {
 
 .note-title {
     margin-bottom: 20px;
-    padding: 10px;
-    //border-radius: 10px;
-    //border-left: 1px solid gray;
-    //border-right: 1px solid gray;
+    padding: 10px 0px 10px;
 }
 
 .post-header {
