@@ -11,3 +11,5 @@ weight: 100
 Store, share and discover more data safely anywhere you need with Refuge, the data social platform.
 
 [Learn more](http://refuge.io/)
+
+**TODO**: adding more description and examples.

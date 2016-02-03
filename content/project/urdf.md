@@ -16,3 +16,5 @@ URDF is an erlang application providing tools to convert RDF triples back and fo
 This project is a refactored version from [erlang-json-ld](https://github.com/nrdufour/erlang-json-ld).
 
 Github repository: [here](https://github.com/nrdufour/urdf)
+
+**TODO**: See what is needed to continue here.

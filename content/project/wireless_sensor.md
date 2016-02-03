@@ -14,4 +14,4 @@ The first step was to create to a small prototype:
 
 {{< image "/images/projects/sensor_version_v1.jpg" >}}
 
-TODO: add the BOM, code, repo url, schema.
+**TODO**: add the BOM, code, repo url, schema.

@@ -27,7 +27,7 @@
 
         <div class="col-lg-3 well">
 
-            <h3>Archives</h3>
+            <h2><u>Archives</u></h2>
 
             {{ range (where .Site.Pages "Type" "archive").GroupByDate "2006" }}
                 <h2 class="mono">{{ .Key }}</h2>

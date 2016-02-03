@@ -9,4 +9,4 @@ desc: An attempt to implement the whole system studied in University Paris 6 in 
 
 EmbryoSys is an old project in which I wanted to implement the whole system studied in the L.I.S.T. departement in the university Paris VI. This system was a great way to study important concepts in modern system, and designed by its director: François Bouillé.
 
-TODO: Add a visual description here.
+**TODO**: Add a visual description here.

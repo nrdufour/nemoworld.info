@@ -11,3 +11,5 @@ weight: 50
 Similar is an erlang application providing a discrete event simulation engine.
 
 Github repository: [here](https://github.com/nrdufour/similar)
+
+**TODO**: add roadmap and document about the design.

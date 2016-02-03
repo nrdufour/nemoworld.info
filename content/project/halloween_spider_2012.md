@@ -11,4 +11,4 @@ In 2012, I wanted to create a simple device for Halloween: having a spider dropp
 
 Nonetheless I have made a prototype that is working nicely and using mostly Adafruit components.
 
-TODO: add the BOM, arduino code and diagrams.
+**TODO**: add the BOM, arduino code and diagrams.
