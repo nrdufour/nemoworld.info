@@ -8,9 +8,7 @@ I recently rediscover this fascinating property many math systems have: homomorp
 
 Specially when it's applied to an encryption system, it becomes even more fascinating: the way to compute with encrypted data without having the need to decrypt them!
 
-<p style="text-align: center;">
-<img src="/img/homomorphic-encryption//homomorphic_enc.png" alt="Homomorphic encryption and concatenation"/>
-</p>
+{{< image "/images/blogs/homomorphic_enc.png" >}}
 
 Making a very robust encryption system is already hard, making it homomorphic even so. Many systems are partially homomorphic like supporting just addition or just multiplication. Only two systems are known to have both really be usable (see [Homomorphic Encryption](http://en.wikipedia.org/wiki/Homomorphic_encryption)).
 

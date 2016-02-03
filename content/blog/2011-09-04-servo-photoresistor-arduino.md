@@ -7,7 +7,7 @@ After using the great examples provided in the Arduino kit, I decided to create 
 
 So I first draw the schema:
 
-![servo photo-resistor schema](/img/servo-photoresistor-arduino/servo_photoresistor2_schem.png)
+{{< image "/images/blogs/servo_photoresistor2_schem.png" >}}
 
 Components:
 
@@ -57,7 +57,7 @@ I guess now it's time to create something more complex! :-)
 I'm adding also the breadboard view made with [Fritzing](http://fritzing.org/):
 
 
-![servo photo-resistor schema](/img/servo-photoresistor-arduino/servo_photoresistor2_bb.png)
+{{< image "/images/blogs/servo_photoresistor2_bb.png" >}}
 
 I have also fixed the source to take account that the analog pin is encoded with 10 bits and therefore goes from 0 to 1023.
 

@@ -18,4 +18,4 @@ title: Halloween Spider Progress
 
 What is left to do: have a good pulley, a good string for the spider and mount that to the door lamp!
 
-![view on the device](/img/halloween_progress_20121010.jpg)
+{{< image "/images/blogs/halloween_progress_20121010.jpg" >}}

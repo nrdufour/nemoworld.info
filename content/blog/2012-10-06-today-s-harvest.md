@@ -10,4 +10,4 @@ title: Today's harvest - 2012/10/06
 
 Today's harvest: A lot of heirloom tomatoes
 
-![20121014 harvest](/img/harvest-20121006.jpg)
+{{< image "/images/blogs/harvest-20121006.jpg" >}}
