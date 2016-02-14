@@ -1,7 +1,6 @@
 ---
 date: 2015-12-10T19:00:20-05:00
 title: Backup
-slug: alfresco/backup
 topics: Alfresco
 ---
 

@@ -1,7 +1,6 @@
 ---
 date: 2015-12-10T20:45:39-05:00
 title: Rules
-slug: alfresco/rules
 topics: Alfresco
 ---
 

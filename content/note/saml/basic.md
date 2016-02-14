@@ -1,7 +1,6 @@
 ---
 date: 2015-12-11T11:50:15-05:00
 title: Basics
-slug: saml/basics
 topics: SAML
 ---
 

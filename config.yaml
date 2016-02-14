@@ -12,8 +12,6 @@ permalinks:
 
 metaDataFormat: "yaml"
 
-theme: "nemo2016"
-
 pygmentsuseclasses: false
 pygmentsstyle: pastie
 
