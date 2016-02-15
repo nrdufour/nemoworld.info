@@ -13,7 +13,7 @@
             <h3><a href="/blog/"><span class="glyphicon glyphicon-chevron-right"></span>Latest news</a></h3>
             {{ range first 5 (where .Data.Pages.ByDate "Section" "blog").Reverse }}
             <p>
-                <span class="post_date badge badge-inverse mono"> {{ dateFormat "01 Jan 2006" .Date }}</span> 
+                <span class="post_date badge badge-inverse mono"> {{ dateFormat "02 Jan 2006" .Date }}</span> 
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
             </p>
             {{ end }}
