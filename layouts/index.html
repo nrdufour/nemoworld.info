@@ -2,7 +2,7 @@
 
 <div class="container">
 
-    <div class="row main-banner">
+    <div class="row main-banner page-header">
         <div class="col-md-12">
             <h1 style="color: white;">Nemo<i class="fa fa-spin">~</i>world<small><br/>A few notes on the net</small></h1>
         </div>
@@ -10,24 +10,39 @@
 
     <div class="row">
         <div class="col-md-6">
-            <h3><a href="/blog/"><span class="glyphicon glyphicon-chevron-right"></span>Latest news</a></h3>
-            {{ range first 5 (where .Data.Pages.ByDate "Section" "blog").Reverse }}
-            <p>
-                <span class="post_date badge badge-inverse mono"> {{ dateFormat "02 Jan 2006" .Date }}</span> 
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </p>
-            {{ end }}
+			<h3 class="text-center" style="border-bottom: 1px solid black;"><a href="/blog/">Latest News</a></h3>
+			<div class="row">
+				<div class="col-xs-4 col-md-4">
+					<img src="/images/dish.png" class="img-responsive" />
+				</div>
+				<div class="col-xs-8 col-md-8">
+					{{ range first 5 (where .Data.Pages.ByDate "Section" "blog").Reverse }}
+					<p>
+						<span class="post_date mono"> {{ dateFormat "02 Jan 2006" .Date }}</span> -
+						<a href="{{ .Permalink }}">{{ .Title }}</a>
+					</p>
+					{{ end }}
+				</div>
+			</div>
         </div>
         <div class="col-md-6">
-            <h3><a href="/note/"><span class="glyphicon glyphicon-chevron-right"></span>Notes</a></h3>
-            <p>Stack of bits and pieces of information I wish to keep and share.</p>
+			<h3 class="text-center" style="border-bottom: 1px solid black;"><a href="/note/">Notes</a></h3>
+			<div class="row">
+				<div class="col-xs-8 col-md-8">
+					<p>Stack of bits and pieces of information I wish to keep and share.</p>
+					<p>Mostly trying to share the tricky bits I went through. Whatever in my job or opensource projects.</p>
+				</div>
+				<div class="col-xs-4 col-md-4">
+					<img src="/images/notes.jpg" class="img-responsive" />
+				</div>
+			</div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-12">
-            <h3><a href="/project/"><span class="glyphicon glyphicon-chevron-right"></span>Current projects</a></h3>
-            <p>Opensource author for over 17 years, I try to publish as much as I can. <br/> Here are 3 of the most recent ones I've worked on:</p>
+			<h3 class="text-center" style="border-bottom: 1px solid black;"><a href="/project/">Current Projects</a></h3>
+            <p>Opensource author for over 17 years, I try to publish as much as I can. Here are 3 of the most recent ones I've worked on:</p>
             <div class="row">
                 {{ range first 3 (where .Data.Pages "Section" "project").Reverse }}
                 <div class="col-lg-4">
