@@ -35,6 +35,11 @@ menu:
           Weight: -90
           Identifier: "note"
           URL: "/note/"
+        - Name: "Recipes"
+          Pre: "<i class='fa fa-heart'></i>"
+          Weight: -85
+          Identifier: "recipe"
+          URL: "/recipe/"
         - Name: "About"
           Pre: "<i class='fa fa-heart'></i>"
           Weight: -80
