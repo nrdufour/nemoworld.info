@@ -18,4 +18,12 @@ The vision is the following:
 
 {{< image "/images/projects/vision.png" >}}
 
+With: 
+
+1. Zigbee Wireless sensor in Router mode
+2. Zigbee Coordinator connected to a linux machine
+3. linux machine on which the gateway (ZGate) is runnging in order to process the zigbee packets and storing the final result into a Barrel-DB node
+4. DX is a project to come: basically a way to assign / post-process / visualize the data
+5. An optional replication stream into a cloud node for anything not too private.
+
 **TODO**: add the BOM, code, repo url, schema.
