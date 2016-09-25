@@ -9,7 +9,7 @@ I recently found a very nice recipe in the first comment of this [page](http://w
 ---
 
 + 5 ripe tomatos seeded and peeled
-+ 1/2 cocumber seeded and peeled
++ 1/2 cucumber seeded and peeled
 + 1/2 onion
 + 1 piece of garlic
 + 1/4 green pepper
