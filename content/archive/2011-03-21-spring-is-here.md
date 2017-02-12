@@ -31,4 +31,4 @@ A small blue flower:<br>
 
 Here is a view on the arboretum:
 
-{% youtube Avrd1qzb5W4 %}
+{{< youtube Avrd1qzb5W4 >}}
