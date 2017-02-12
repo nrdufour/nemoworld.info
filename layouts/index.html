@@ -2,20 +2,19 @@
 
 <div class="container">
 
-    <div class="row main-banner page-header">
-        <div class="col-md-12">
-            <h1 style="color: white;">Nemo<i class="fa fa-spin">~</i>world<small><br/>A few notes on the net</small></h1>
-        </div>
+	<div class="jumbotron main-banner">
+		<h1>Nemoworld</h1>
+		<p class="lead">A few notes on the net</p>
     </div>
 
     <div class="row">
-        <div class="col-md-6">
+		<div class="col">
 			<h3 class="text-center" style="border-bottom: 1px solid #eeeeee;"><a href="/blog/">Latest News</a></h3>
 			<div class="row">
-				<div class="col-xs-4 col-md-4">
-					<img src="/images/dish.png" class="img-responsive" />
+				<div class="col-4">
+					<img src="/images/dish.png" class="img-fluid" />
 				</div>
-				<div class="col-xs-8 col-md-8">
+				<div class="col-8">
 					{{ range first 5 (where .Data.Pages.ByDate "Section" "blog").Reverse }}
 					<p>
 						<span class="post_date mono"> {{ dateFormat "02 Jan 2006" .Date }}</span> -
@@ -25,7 +24,7 @@
 				</div>
 			</div>
         </div>
-        <div class="col-md-6">
+		<div class="col">
 			<h3 class="text-center" style="border-bottom: 1px solid #eeeeee;"><a href="/note/">Notes</a></h3>
 			<div class="row">
 				<div class="col-xs-8 col-md-8">
@@ -33,7 +32,7 @@
 					<p>Mostly trying to share the tricky bits I went through. Whatever in my job or opensource projects.</p>
 				</div>
 				<div class="col-xs-4 col-md-4">
-					<img src="/images/notes.jpg" class="img-responsive" />
+					<img src="/images/notes.jpg" class="img-fluid" />
 				</div>
 			</div>
         </div>
