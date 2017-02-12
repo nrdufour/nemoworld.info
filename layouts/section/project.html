@@ -11,19 +11,19 @@
     <div class="row">
         {{ range .Pages.GroupByParam "started" "desc" }}
             {{ range .Pages }}
-         <div class="col-lg-6 col-md-6">
+		<div class="col-6">
             <div class="row">
-                <div class="col-lg-2 col-md-2 hidden-xs hidden-sm">
-                    <img class="img-responsive" src="/images/projects/{{ .Params.project_icon }}" />
+				<div class="col-2 hidden-md-down">
+                    <img class="img-fluid" src="/images/projects/{{ .Params.project_icon }}" />
                     <br/>
-                    <a class="btn btn-default btn-sm center-block" href="{{ .RelPermalink }}" role="button">More</a>
+					<br/>
+                    <a class="btn btn-outline-primary btn-block" href="{{ .RelPermalink }}" role="button">More</a>
                 </div>
-                <div class="col-lg-10 col-md-10">
+                <div class="col-lg-10 col-12">
                     <h2>{{ .Title }}</h2>
                     <p>Started: <span class="mono">{{ .Params.started }}</span></p>
                     <blockquote>{{ .Params.desc }}</blockquote>
-                    <a class="btn btn-default btn-sm center-block visible-xs" href="{{ .RelPermalink }}" role="button">More</a>
-                    <a class="btn btn-default btn-sm center-block visible-sm" href="{{ .RelPermalink }}" role="button">More</a>
+                    <a class="btn btn-outline-primary btn-block hidden-lg-up" href="{{ .RelPermalink }}" role="button">More</a>
                 </div>
             </div>
         </div>
