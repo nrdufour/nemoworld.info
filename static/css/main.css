@@ -87,3 +87,12 @@ footer p {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+
+.highlight {
+	padding-top: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	border: 1px dashed gray;
+    border-radius: 3px;
+	margin-bottom: 1rem;
+}

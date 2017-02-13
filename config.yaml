@@ -13,7 +13,7 @@ permalinks:
 metaDataFormat: "yaml"
 
 pygmentsuseclasses: false
-pygmentsstyle: pastie
+pygmentsstyle: borland
 
 taxonomies:
     topic: topics
