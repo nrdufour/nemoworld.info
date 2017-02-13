@@ -7,20 +7,22 @@
         <p>Stack of bits and pieces of information I wish to keep and share. <br/> More or less ordered ;-)</p>
     </div>
 
-    <div class="row">{{ range $name, $taxonomy := .Site.Taxonomies.topics }}
-        <div class="col-lg-4">
-            <div class="panel panel-success">
-                <div class="panel-body">
-                    <h3 style="text-transform: capitalize; font-variant: small-caps;">{{ $name }}</h3>
-                    <ul>
-                    {{ range .Pages.ByTitle }}
-                       <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-                    {{ end }}
-                    </ul>
-                </div>
-            </div>
-        </div>{{ end }}
-    </div>
+	<div class="row">
+    {{ range $name, $taxonomy := .Site.Taxonomies.topics }}
+	<div class="col">
+		<div class="card">
+			<div class="card-block">
+				<h3 class="card-title" style="text-transform: capitalize; font-variant: small-caps;">{{ $name }}</h3>
+				<ul>
+				{{ range .Pages.ByTitle }}
+				   <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+				{{ end }}
+				</ul>
+			</div>
+		</div>
+	</div>
+	{{ end }}
+	</div>
 
 </div>
 
