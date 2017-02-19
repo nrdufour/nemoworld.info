@@ -1,25 +1,20 @@
 {{ partial "header.html" . }}
 
-<div class="container">
-
     <div class="page-header">
         <h1>Projects</h1>
     </div>
 
     {{ range .Data.Pages.GroupByParam "project_type" }}
-    <h3>{{ .Key }}</h3>
+	<div class="row">
+		<div class="col">
+			<h3>{{ .Key }}</h3>
+		</div>
+	</div>
         {{ range .Pages.GroupByParam "started" "desc" }}
             {{ range .Pages }}
     <div class="row justify-content-center">
 		<div class="col-10">
             <div class="row">
-				<!--
-				<div class="col-2 hidden-md-down">
-                    <img class="img-fluid" src="/images/projects/{{ .Params.project_icon }}" />
-                    <br/>
-					<br/>
-                </div>
-				-->
                 <div class="col-lg-10 col-12">
 					<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
                     <blockquote class="blockquote">{{ .Params.desc }}</blockquote>
@@ -30,7 +25,5 @@
             {{ end }}
         {{ end }}
     {{ end }}
-
-</div>
 
 {{ partial "footer.html" . }}
