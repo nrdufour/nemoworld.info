@@ -1,51 +1,29 @@
 {{ partial "header.html" . }}
 
-<div class="container">
-
-    <div class="row main-banner page-header">
-        <div class="col-md-12">
-            <h1 style="color: white;">Nemo<i class="fa fa-spin">~</i>world<small><br/>A few notes on the net</small></h1>
-        </div>
-    </div>
+	<div class="jumbotron text-right main-banner">
+		<h1 class="display-5">Welcome to Nemoworld!</h1>
+		<p class="lead">A few notes on the net</p>
+	</div>
 
     <div class="row">
-        <div class="col-md-6">
-			<h3 class="text-center" style="border-bottom: 1px solid #eeeeee;"><a href="/blog/">Latest News</a></h3>
+		<div class="col-lg-4">
+			<h3 ><a href="/blog/">Latest News</a></h3>
 			<div class="row">
-				<div class="col-xs-4 col-md-4">
-					<img src="/images/dish.png" class="img-responsive" />
-				</div>
-				<div class="col-xs-8 col-md-8">
-					{{ range first 5 (where .Data.Pages.ByDate "Section" "blog").Reverse }}
+				<div class="col">
+					{{ range first 10 (.Data.Pages.ByDate).Reverse }}
 					<p>
-						<span class="post_date mono"> {{ dateFormat "02 Jan 2006" .Date }}</span> -
-						<a href="{{ .Permalink }}">{{ .Title }}</a>
+						{{ .Render "short_summary"}}
 					</p>
 					{{ end }}
 				</div>
 			</div>
         </div>
-        <div class="col-md-6">
-			<h3 class="text-center" style="border-bottom: 1px solid #eeeeee;"><a href="/note/">Notes</a></h3>
-			<div class="row">
-				<div class="col-xs-8 col-md-8">
-					<p>Stack of bits and pieces of information I wish to keep and share.</p>
-					<p>Mostly trying to share the tricky bits I went through. Whatever in my job or opensource projects.</p>
-				</div>
-				<div class="col-xs-4 col-md-4">
-					<img src="/images/notes.jpg" class="img-responsive" />
-				</div>
-			</div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-			<h3 class="text-center" style="border-bottom: 1px solid #eeeeee;"><a href="/project/">Current Projects</a></h3>
-            <p>Opensource author for over 17 years, I try to publish as much as I can. Here are 3 of the most recent ones I've worked on:</p>
+		<div class="col">
+			<h3><a href="/project/">Current Projects</a></h3>
+			<hr/>
             <div class="row">
-                {{ range first 3 (where .Data.Pages "Section" "project").Reverse }}
-                <div class="col-lg-4">
+                {{ range first 3 (where .Data.Pages "Section" "project") }}
+				<div class="col">
                     {{ .Render "summary" }}
                 </div>
                 {{ end }}
@@ -53,6 +31,5 @@
         </div>
     </div>
 
-</div>
 
 {{ partial "footer.html" . }}

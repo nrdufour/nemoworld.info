@@ -20,7 +20,7 @@ It's a lot of fun and you learn quickly to integrate complex notions with some w
 
 Here is the lecture #22 which concludes the first part:
 
-{% youtube ddU6HBFlvEk %}
+{{< youtube ddU6HBFlvEk >}}
 
 MIT offers lots of very interesting free courseware, and I encourage you to look at the [full list](http://ocw.mit.edu/OcwWeb/web/courses/courses/index.htm "MIT Courseware List").
 

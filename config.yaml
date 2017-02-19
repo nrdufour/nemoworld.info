@@ -1,7 +1,7 @@
 ---
 baseurl: "http://nemoworld.info/"
 languageCode: "en-us"
-title: "Nemo~world"
+title: "Nemoworld"
 
 pluralizeListTitles: true
 
@@ -13,7 +13,7 @@ permalinks:
 metaDataFormat: "yaml"
 
 pygmentsuseclasses: false
-pygmentsstyle: pastie
+pygmentsstyle: perldoc
 
 taxonomies:
     topic: topics

@@ -8,4 +8,4 @@ I took yesterday morning a little video of Jupiter and the Moon close together i
 
 Something simple and always beautiful to watch:
 
-{% youtube L5P734680LI %}
+{{< youtube L5P734680LI >}}

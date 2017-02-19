@@ -1,19 +1,16 @@
 {{ partial "header.html" . }}
 
-<div class="container">
-
     <div class="page-header">
-        <h1 class="text-center">{{ .Title }}</h1>
+        <h1>About</h1>
     </div>
 
     <div class="row">
-        <div class="col-lg-2">
-            <img src="/images/{{.Params.image}}" class="img-circle" />
+		<div class="col-2">
+            <img src="/images/{{.Params.image}}" class="img-thumbnail rounded-circle" />
         </div>
-        <div class="col-lg-10">
+		<div class="col-10">
             {{ .Content }}
         </div>
     </div>
-</div>
 
 {{ partial "footer.html" . }}

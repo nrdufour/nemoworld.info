@@ -9,7 +9,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 body {
-    padding-top: 60px;
     /* Margin bottom by footer height */
     margin-bottom: 40px;
     font-family: 'Exo 2', sans-serif;
@@ -74,17 +73,25 @@ footer p {
 }
 
 .main-banner {
-    background-image:url("/images/sensor_version_1.jpg");
+    background-image:url("/images/banner/winter.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     text-align: right;
     color: white;
     border-radius: 15px 50px;
-    text-shadow: 1px 0 5px #5A5A5A;
-    margin-top: 40px;
+    text-shadow: 3px 3px #5a5a5a;
 }
 
 .img-doc {
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+.highlight {
+	padding-top: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	border: 1px dashed gray;
+    border-radius: 3px;
+	margin-bottom: 1rem;
 }
