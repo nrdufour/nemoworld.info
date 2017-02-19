@@ -5,7 +5,7 @@ project_type: Software
 project_icon: similar.png
 started: 2010
 desc: Discrete event simulator written in Erlang. Still a lot to finish.
-weight: 50
+weight: 20
 ---
 
 Similar is an erlang application providing a discrete event simulation engine.
