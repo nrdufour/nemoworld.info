@@ -3,7 +3,7 @@
 <div class="container">
 
     <div class="page-header">
-        <h1 class="text-center">{{ .Title }}</h1>
+        <h1>{{ .Title }}</h1>
         <p>Stack of bits and pieces of information I wish to keep and share. <br/> More or less ordered ;-)</p>
     </div>
 
@@ -13,7 +13,7 @@
 		<div class="card">
 			<div class="card-block">
 				<h3 class="card-title" style="text-transform: capitalize; font-variant: small-caps;">{{ $name }}</h3>
-				<ul>
+				<ul class="list-unstyled">
 				{{ range .Pages.ByTitle }}
 				   <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 				{{ end }}
