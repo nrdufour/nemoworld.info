@@ -1,5 +1,5 @@
-    <!-- Fixed navbar -->
-	<nav class="navbar navbar-toggleable-md navbar-inverse bg-primary fixed-top">
+<div class="container">
+	<nav class="navbar navbar-toggleable-md navbar-light">
 		<!-- Hamburger menu button -->
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -7,21 +7,21 @@
 
 		<!-- Site name -->
 		<a class="navbar-brand" href="/">
-			<img src="/images/tilde.png" width="30" height="30" class="d-inline-block align-top" alt="">
-			<b>Nemoworld</b>
+			<b>Nem<i class="fa fa-globe"></i></b>
 		</a>
 
 		<!-- Menu -->
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-            {{ $title := .Title }}
-            {{ $section := .Section }}
-            {{ range .Site.Menus.main }}
-              {{ $name_with_s := .Name | printf "%ss" }}
-              <li class="nav-item{{ if or (or (eq $title .Name) (eq $section .Identifier)) (eq $title $name_with_s) }} active{{ end }}">
-                <a class="nav-link" href="{{.URL}}">{{.Name}}</a>
-              </li>
-            {{ end }}
+			<ul class="navbar-nav">
+				{{ $title := .Title }}
+				{{ $section := .Section }}
+				{{ range .Site.Menus.main }}
+				{{ $name_with_s := .Name | printf "%ss" }}
+				<li class="nav-item{{ if or (or (eq $title .Name) (eq $section .Identifier)) (eq $title $name_with_s) }} active{{ end }}">
+					<a class="nav-link" href="{{.URL}}">{{.Name}}</a>
+				</li>
+				{{ end }}
 			</ul>
 		</div>
-    </nav>
+	</nav>
+</div>
