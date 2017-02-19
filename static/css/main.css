@@ -9,7 +9,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 body {
-    padding-top: 60px;
     /* Margin bottom by footer height */
     margin-bottom: 40px;
     font-family: 'Exo 2', sans-serif;
@@ -74,7 +73,7 @@ footer p {
 }
 
 .main-banner {
-    background-image:url("/images/sensor_version_1.jpg");
+    background-image:url("/images/banner/winter.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     text-align: right;
