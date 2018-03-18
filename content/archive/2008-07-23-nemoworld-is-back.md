@@ -1,6 +1,7 @@
 ---
 date: 2008-07-23T00:00:00Z
 title: Nemoworld is back
+slug: nemoworld-is-back
 type: archive
 ---
 

@@ -1,6 +1,7 @@
 ---
 date: 2007-01-17T00:00:00Z
 title: Embryo Systems in orbit
+slug: embryo-systems-in-orbit
 type: archive
 ---
 

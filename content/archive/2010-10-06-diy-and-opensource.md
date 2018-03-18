@@ -1,6 +1,7 @@
 ---
 date: 2010-10-06T00:00:00Z
 title: DIY and Opensource
+slug: diy-and-opensource
 type: archive
 ---
 

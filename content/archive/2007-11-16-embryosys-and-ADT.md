@@ -1,6 +1,7 @@
 ---
 date: 2007-11-16T00:00:00Z
 title: Embryosys and ADT
+slug: embryosys-and-ADT
 type: archive
 ---
 

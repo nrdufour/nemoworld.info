@@ -1,6 +1,7 @@
 ---
 date: 2006-09-20T00:00:00Z
 title: Ahhhh Paris !
+slug: ahhhh-paris
 type: archive
 ---
 

@@ -1,6 +1,7 @@
 ---
 date: 2006-09-30T00:00:00Z
 title: Welcome to dictatorship of USA
+slug: welcome-to-dictatarship-of-usa
 type: archive
 ---
 

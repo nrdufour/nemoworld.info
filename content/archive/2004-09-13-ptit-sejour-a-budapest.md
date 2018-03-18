@@ -1,6 +1,7 @@
 ---
 date: 2004-09-13T00:00:00Z
 title: Ptit séjour à Budapest
+slug: ptit-sejour-a-budapest
 type: archive
 ---
 

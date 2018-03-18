@@ -1,6 +1,7 @@
 ---
 date: 2010-08-31T00:00:00Z
 title: Damn Oracle...
+slug: damn-oracle
 type: archive
 ---
 

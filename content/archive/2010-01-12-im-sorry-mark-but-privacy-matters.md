@@ -1,6 +1,7 @@
 ---
 date: 2010-01-12T00:00:00Z
 title: I'm sorry Mark but privacy matters
+slug: im-sorry-mark-but-privacy-matters
 type: archive
 ---
 

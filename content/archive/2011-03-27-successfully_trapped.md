@@ -1,6 +1,7 @@
 ---
 date: 2011-03-27T00:00:00Z
 title: Successfully trapped!
+slug: successfully-trapped
 type: archive
 ---
 

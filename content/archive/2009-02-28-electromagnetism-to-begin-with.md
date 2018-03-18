@@ -1,6 +1,7 @@
 ---
 date: 2009-02-28T00:00:00Z
 title: Electromagnetism to begin with
+slug: electromagnetism-to-begin-with
 type: archive
 ---
 

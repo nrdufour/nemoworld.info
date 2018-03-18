@@ -1,6 +1,7 @@
 ---
 date: 2006-04-03T00:00:00Z
 title: Pictures of Sicily
+slug: pictures-of-sicily
 type: archive
 ---
 

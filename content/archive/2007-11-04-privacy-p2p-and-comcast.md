@@ -1,6 +1,7 @@
 ---
 date: 2007-11-04T00:00:00Z
 title: Privacy, P2P and Comcast
+slug: privacy-p2p-and-comcast
 type: archive
 ---
 

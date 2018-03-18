@@ -6,8 +6,8 @@ title: "Nemoworld"
 pluralizeListTitles: true
 
 permalinks:
-    blog: /blog/:year/:month/:day/:title/
-    archive: /oldblog/:year/:month/:day/:title/
+    blog: /blog/:year/:month/:day/:slug/
+    archive: /oldblog/:year/:month/:day/:slug/
     project: /project/:title
 
 metaDataFormat: "yaml"
@@ -17,6 +17,9 @@ pygmentsstyle: perldoc
 
 taxonomies:
     topic: topics
+
+disableKinds:
+  - RSS
 
 menu:
     main:

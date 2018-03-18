@@ -1,6 +1,7 @@
 ---
 date: 2008-09-11T00:00:00Z
 title: LHC and... rap!
+slug: lhc-and-rap
 type: archive
 ---
 

@@ -1,6 +1,7 @@
 ---
 date: 2010-01-15T00:00:00Z
 title: TweetDeck on Ubuntu Karmic 64bit
+slug: tweetdeck-on-ubuntu-karmic-64bit
 type: archive
 ---
 

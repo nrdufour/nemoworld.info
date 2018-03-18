@@ -1,6 +1,7 @@
 ---
 date: 2010-09-02T00:00:00Z
 title: 2 feral cats visiting us :)
+slug: 2-feral-cats-visiting-us
 type: archive
 ---
 

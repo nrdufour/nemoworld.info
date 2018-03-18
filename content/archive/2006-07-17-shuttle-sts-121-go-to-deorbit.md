@@ -1,6 +1,7 @@
 ---
 date: 2006-07-17T00:00:00Z
 title: Shuttle STS-121 go to deorbit
+slug: shuttle-sts-121-go-to-deorbit
 type: archive
 ---
 

@@ -1,6 +1,7 @@
 ---
 date: 2006-09-23T00:00:00Z
 title: open-aero.org is now open
+slug: open-aero-is-now-open
 type: archive
 ---
 

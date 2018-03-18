@@ -1,6 +1,7 @@
 ---
 date: 2011-03-21T00:00:00Z
 title: Spring is here!
+slug: spring-is-here
 type: archive
 ---
 

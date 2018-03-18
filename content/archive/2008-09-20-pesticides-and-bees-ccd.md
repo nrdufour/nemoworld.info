@@ -1,6 +1,7 @@
 ---
 date: 2008-09-20T00:00:00Z
 title: Pesticides and bee's CCD
+slug: pesticides-and-bees
 type: archive
 ---
 

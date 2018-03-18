@@ -1,6 +1,7 @@
 ---
 date: 2005-07-21T00:00:00Z
 title: The Right to Pay, not to Listen
+slug: the-right-to-pay-not-to-listen
 type: archive
 ---
 

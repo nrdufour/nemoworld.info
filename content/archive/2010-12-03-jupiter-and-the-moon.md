@@ -1,6 +1,7 @@
 ---
 date: 2010-12-03T00:00:00Z
 title: Jupiter and the Moon
+slug: jupiter-and-the-moon
 type: archive
 ---
 

@@ -1,6 +1,7 @@
 ---
 date: 2010-06-28T00:00:00Z
 title: Back to the basics
+slug: back-to-the-basics
 type: archive
 ---
 

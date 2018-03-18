@@ -1,6 +1,7 @@
 ---
 date: 2007-08-27T00:00:00Z
 title: Parrot and ADT'81
+slug: parrot-and-adt81
 type: archive
 ---
 

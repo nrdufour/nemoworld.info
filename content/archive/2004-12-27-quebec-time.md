@@ -1,6 +1,7 @@
 ---
 date: 2004-12-27T00:00:00Z
 title: Quebec Time :)
+slug: quebec-time
 type: archive
 ---
 

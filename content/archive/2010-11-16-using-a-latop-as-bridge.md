@@ -1,6 +1,7 @@
 ---
 date: 2010-11-16T00:00:00Z
 title: Using a laptop as bridge
+slug: using-a-laptop-as-bridge
 type: archive
 ---
 

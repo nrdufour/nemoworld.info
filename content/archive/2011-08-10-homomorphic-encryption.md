@@ -1,6 +1,7 @@
 ---
 date: 2011-08-10T00:00:00Z
 title: Homomorphic Encryption
+slug: homomorphic-encryption
 type: archive
 ---
 

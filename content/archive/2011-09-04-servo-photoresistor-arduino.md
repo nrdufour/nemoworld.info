@@ -1,6 +1,7 @@
 ---
 date: 2011-09-04T00:00:00Z
 title: How to couple a servo to a photo-resistor on an Arduino board
+slug: servo-photorestistor-arduino
 type: archive
 ---
 

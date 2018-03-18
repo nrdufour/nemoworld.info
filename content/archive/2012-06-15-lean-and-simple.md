@@ -1,6 +1,7 @@
 ---
 date: 2012-06-15T00:00:00Z
 title: Lean & Simple
+slug: lean-and-simple
 type: archive
 ---
 

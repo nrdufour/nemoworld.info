@@ -7,6 +7,7 @@ tags:
 - halloween
 - "2012"
 title: Halloween Spider Progress
+slug: halloween-spider-progress
 type: archive
 ---
 

@@ -6,6 +6,7 @@ tags:
 - harvest
 - "2012"
 title: Today's harvest - 2012/10/14
+slug: today-s-harvest
 type: archive
 ---
 

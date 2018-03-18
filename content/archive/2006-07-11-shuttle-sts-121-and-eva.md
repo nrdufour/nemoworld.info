@@ -1,6 +1,7 @@
 ---
 date: 2006-07-11T00:00:00Z
 title: Shuttle STS-121 and EVA
+slug: shuttle-sts-121-and-eva
 type: archive
 ---
 
