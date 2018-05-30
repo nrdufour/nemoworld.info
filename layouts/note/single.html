@@ -18,6 +18,7 @@
 		{{ else }}
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		{{ end }}
+			<p>Last update: <span class="mono">{{ dateFormat "2006 Jan 02" .Date }}</span></p>
             {{ .Content }}
         </div>
     </div>
