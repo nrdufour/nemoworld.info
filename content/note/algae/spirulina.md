@@ -4,7 +4,7 @@ title: Spirulina
 topics: Algae
 ---
 
-Quick notes regardoing Spirulina, which seems to be an interesting algea to grow, even if it lacks vitamin B12.
+Quick notes regarding Spirulina, which seems to be an interesting algea to grow, even if it lacks vitamin B12.
 
 ---
 
