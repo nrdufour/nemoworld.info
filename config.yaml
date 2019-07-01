@@ -24,27 +24,22 @@ disableKinds:
 menu:
     main:
         - Name: "Blog"
-          Pre: "<i class='fa fa-heart'></i>"
           Weight: -110
           Identifier: "blog"
           URL: "/blog/"
         - Name: "Projects"
-          Pre: "<i class='fa fa-heart'></i>"
           Weight: -100
           Identifier: "project"
           URL: "/project/"
         - Name: "Notes"
-          Pre: "<i class='fa fa-heart'></i>"
           Weight: -90
           Identifier: "note"
           URL: "/note/"
         - Name: "Recipes"
-          Pre: "<i class='fa fa-heart'></i>"
           Weight: -85
           Identifier: "recipe"
           URL: "/recipe/"
         - Name: "About"
-          Pre: "<i class='fa fa-heart'></i>"
           Weight: -80
           Identifier: "about"
           URL: "/about/"
