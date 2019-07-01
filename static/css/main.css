@@ -73,13 +73,12 @@ footer p {
 }
 
 .main-banner {
-    background-image:url("/images/banner/winter.jpg");
+    background-image:url("/images/sensor_version_1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    text-align: right;
     color: white;
     border-radius: 15px 50px;
-    text-shadow: 3px 3px #5a5a5a;
+    ext-shadow: 3px 3px #5a5a5a;
 }
 
 .img-doc {

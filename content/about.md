@@ -11,5 +11,5 @@ Software Architect with a foot in geophysics and another for weird physics theor
 A lot of [projects](/project/) in the TODO list. A few already done and far more to finish obviously.
 
 Other profiles:
-[<i class="fa fa-twitter fa-2x"></i>](https://twitter.com/nrdufour)
-[<i class="fa fa-linkedin fa-2x"></i>](https://www.linkedin.com/in/nrdufour)
+[<i class="fab fa-twitter fa-2x"></i>](https://twitter.com/nrdufour)
+[<i class="fab fa-linkedin fa-2x"></i>](https://www.linkedin.com/in/nrdufour)
