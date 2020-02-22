@@ -12,9 +12,6 @@ permalinks:
 
 metaDataFormat: "yaml"
 
-pygmentsuseclasses: false
-pygmentsstyle: perldoc
-
 taxonomies:
     topic: topics
 
