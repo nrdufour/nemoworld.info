@@ -10,7 +10,7 @@
 			<h3 ><a href="/blog/">Latest News</a></h3>
 			<div class="row">
 				<div class="col">
-					{{ range first 10 (.Data.Pages.ByDate).Reverse }}
+					{{ range first 10 (.Site.RegularPages.ByDate).Reverse }}
 					<p>
 						{{ .Render "short_summary"}}
 					</p>
@@ -22,7 +22,7 @@
 			<h3><a href="/project/">Current Projects</a></h3>
 			<hr/>
             <div class="row">
-                {{ range first 3 (where .Data.Pages "Section" "project") }}
+                {{ range first 3 (where .Site.RegularPages "Section" "project") }}
 				<div class="col">
                     {{ .Render "summary" }}
                 </div>
