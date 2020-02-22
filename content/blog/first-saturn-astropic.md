@@ -10,27 +10,14 @@ I've been tinkering with the NexImage camera for a while but never managed to us
 The problem was mostly using the wrong software. The solution was to plug the NexImage device to a basic linux machine with Ubuntu, 
 then launch Cheese (Webcam application) and voila:
 
-<table>
-  <tr>
-    <td colspan="2">
-    {{< image "/images/blogs/2016-06-25-231545.jpg" >}}
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2">
-    Then tried to have a better image by adjusting the focus, but without much luck as you can see. I think I reached the sensor maximum quality, and the atmosphere was rather warm and moving. <br/>
-    The telescope is a Celestro NexStar 127 SLT (Cassegrain type, of course), and the camera is a Celestron NexImage Solar System Imager.
-    </td>
-  </tr>
-  <tr>
-    <td>
-    {{< image "/images/blogs/2016-06-25-231545.jpg" >}}
-    </td>
-    <td>
-    {{< image "/images/blogs/2016-06-25-231545.jpg" >}}
-    </td>
-  </tr>
-</table>
+{{< image "/images/blogs/2016-06-25-231545.jpg" >}}
+
+Then tried to have a better image by adjusting the focus, but without much luck as you can see. I think I reached the sensor maximum quality, and the atmosphere was rather warm and moving. <br/>
+The telescope is a Celestro NexStar 127 SLT (Cassegrain type, of course), and the camera is a Celestron NexImage Solar System Imager.
+
+{{< image "/images/blogs/2016-06-25-231545.jpg" >}}
+
+{{< image "/images/blogs/2016-06-25-231545.jpg" >}}
 
 Several issues here:
 
