@@ -1,0 +1,45 @@
+{{ define "main" }}
+    <div class="page-header">
+        <h1>Latest news</h1>
+    </div>
+
+	{{ range (where .Site.RegularPages "Type" "posts").GroupByDate "2006" }}
+	<div class="row">
+		<div class="col">
+			<h2 class="mono">{{ .Key }}</h2>
+		</div>
+	</div>
+		{{ range .Pages.ByDate.Reverse }}
+	<div class="row">
+		<div class="col-1"></div>
+		<div class="col-11">
+			<span class="mono">{{ dateFormat "Jan 02" .Date }}</span> &nbsp;-&nbsp;  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+		</div>
+	</div>
+		{{ end }}
+		<br/>
+	{{ end }}
+
+	<hr/>
+
+	<h2><u>Archives</u></h2>
+
+	{{ range (where .Site.RegularPages "Type" "archive").GroupByDate "2006" }}
+	<div class="row">
+		<div class="col">
+			<h2 class="mono">{{ .Key }}</h2>
+		</div>
+	</div>
+		{{ range .Pages.ByDate.Reverse }}
+	<div class="row">
+		<div class="col-1"></div>
+		<div class="col-11">
+			<p>
+				<span class="mono">{{ dateFormat "Jan 02" .Date }}</span> &nbsp;-&nbsp;  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+			</p>
+		</div>
+	</div>
+		{{ end }}
+	<br/>
+	{{ end }}
+{{ end }}

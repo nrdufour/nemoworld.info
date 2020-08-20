@@ -1,0 +1,46 @@
+baseURL = "https://nemoworld.info"
+languageCode = "en-us"
+title = "Nemoworld"
+theme = "basic"
+
+[permalinks]
+  posts = "posts/:year/:month/:day/:slug/"
+  archive = "/oldblog/:year/:month/:day/:slug/"
+ 
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "manni"
+    tabWidth = 4
+
+[menu]
+  [[menu.nav]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 1
+  [[menu.nav]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+  [[menu.nav]]
+    name = "Notes"
+    url = "/notes/"
+    weight = 3
+  [[menu.nav]]
+    name = "Recipes"
+    url = "/recipes/"
+    weight = 4
+  [[menu.nav]]
+    name = "About"
+    url = "/about"
+    weight = 20
+
+[taxonomies]
+  topic = "topics"
