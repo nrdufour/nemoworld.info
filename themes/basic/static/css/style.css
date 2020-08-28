@@ -89,3 +89,11 @@ footer p {
     //font-family: 'Inconsolata';
     font-family: 'Ubuntu Mono';
 }
+
+span.with-border img {
+    border: 1px dotted black;
+}
+
+figure {
+    margin-right: 1em;
+}
