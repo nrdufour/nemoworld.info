@@ -61,7 +61,7 @@ The problem is that since remarkable published their version 2.0, a few things c
 
 After several tests (by drawing a single line in a single page in a single file for *each* brush type),
 
-{{< bspan "d-inline-flex w-50 with-border" >}}
+{{< bspan "d-inline-flex w-100 with-border" >}}
     {{< figure src="Mechanical.png" caption="Mechanical" width="100%" >}}
     {{< figure src="Marker.png" caption="Marker" width="100%" >}}
     {{< figure src="Highlighter.png" caption="Highlighter" width="100%" >}}
