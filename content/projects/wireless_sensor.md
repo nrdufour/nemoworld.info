@@ -12,11 +12,11 @@ The idea is to create a network of simple wireless sensors reporting mostly the 
 
 The first step was to create to a small prototype:
 
-{{< figure src="/images/projects/sensor_version_v1.jpg" >}}
+{{< image "/images/projects/sensor_version_v1.jpg" >}}
 
 The vision is the following:
 
-{{< figure src="/images/projects/vision.png" >}}
+{{< image "/images/projects/vision.png" >}}
 
 With: 
 
