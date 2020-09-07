@@ -21,7 +21,7 @@
 			<div class="row">
 				<div class="col">
 					<ul>
-					{{ range first 5 (.Site.RegularPages.ByDate).Reverse }}
+					{{ range first 5 ( (where .Site.RegularPages "Section" "posts").ByDate).Reverse }}
 					<li>
 						{{ .Render "short_summary"}}
 					</li>
