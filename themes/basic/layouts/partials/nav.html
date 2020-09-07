@@ -14,6 +14,7 @@
 			{{ $active = or $active (and (eq .Name "Notes") (eq $current.Section "notes")) }}
 			{{ $active = or $active (and (eq .Name "Projects") (eq $current.Section "projects")) }}
 			{{ $active = or $active (and (eq .Name "Recipes") (eq $current.Section "recipes")) }}
+			{{ $active = or $active (and (eq .Name "Drawings") (eq $current.Section "drawings")) }}
 			<li class="nav-item">
 				<a href="{{ .URL }}" class="nav-link {{ if $active }}active{{ end }}">{{ .Name }}</a>
 			</li>

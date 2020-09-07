@@ -38,6 +38,10 @@ theme = "basic"
     url = "/recipes/"
     weight = 4
   [[menu.nav]]
+    name = "Drawings"
+    url = "/drawings"
+    weight = 5
+  [[menu.nav]]
     name = "About"
     url = "/about"
     weight = 20

@@ -97,3 +97,8 @@ span.with-border img {
 figure {
     margin-right: 1em;
 }
+
+.drawings figure {
+	background-color: gray;
+	padding: 5px;
+}

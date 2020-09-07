@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <h2>{{ .Title }}</h2>
+  <div class="d-flex">
+	  {{ range .Pages.ByDate.Reverse }}
+	  <div class="drawings" class="d-inline-flex">
+			<figure>
+				<a href="{{ .RelPermalink }}">
+					<img src="/{{ .File.Dir }}{{ .Params.thumbnail }}" width="100%" />
+				</a>
+			</figure>
+	  </div>
+	  {{ end }}
+  </div>
+{{ end }}
