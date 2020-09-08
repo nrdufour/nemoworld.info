@@ -7,7 +7,7 @@
 
 	{{ range $name, $taxonomy := .Site.Taxonomies.topics }}
 	<div class="d-inline-flex flew-row">
-		<div class="card text-center">
+		<div class="card text-center" style="margin-bottom: 5px;">
 			<h5 class="card-header">
 				<span style="text-transform: capitalize;">{{ replace $name "-" " " }}</span>
 			</h5>
