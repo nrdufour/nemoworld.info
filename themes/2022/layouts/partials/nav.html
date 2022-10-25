@@ -1,0 +1,6 @@
+<nav>
+	<a href="/">Nemoworld</a>
+	{{ range .Site.Menus.nav -}}
+		- <a href="{{ .URL }}">{{ .Name }}</a>
+	{{ end }}
+</nav>

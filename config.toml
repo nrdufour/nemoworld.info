@@ -1,7 +1,9 @@
 baseURL = "https://nemoworld.info"
 languageCode = "en-us"
 title = "Nemoworld"
-theme = "basic"
+theme = "2022"
+
+assetDir = "static"
 
 [permalinks]
   posts = "posts/:year/:month/:day/:slug/"
@@ -42,8 +44,8 @@ theme = "basic"
     url = "/drawings"
     weight = 5
   [[menu.nav]]
-    name = "About"
-    url = "/about"
+    name = "Contact"
+    url = "/contact"
     weight = 20
 
 [taxonomies]

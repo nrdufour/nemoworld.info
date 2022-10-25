@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body class="hack gruvbox-dark">
+		<div class="container">
+			<header>
+			{{- partial "nav.html" . -}}
+			</header>
+			<br/>
+			<br/>
+			<div class="snowframe">
+			{{- block "main" . }}{{- end }}
+			</div>
+			<hr>
+			{{- partial "footer.html" . -}}
+		</div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+{{ define "main" }}
+    <h1>{{ .Title }}</h1>
+    <p>Stack of bits and pieces of information I wish to keep and share. <br/> More or less ordered ;-)</p>
+
+	<div class="grid" style="gap: 2em;">
+	{{ range $name, $taxonomy := .Site.Taxonomies.topics }}
+		<div class="cell">
+			<h1>
+				<span style="text-transform: capitalize;">{{ replace $name "-" " " }}</span>
+			</h1>
+			<ul>
+				{{ range .Pages.ByTitle }}
+				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+				{{ end }}
+			</ul>
+		</div>
+	{{ end }}
+	</div>
+{{ end }}

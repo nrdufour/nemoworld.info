@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{ $name := index .Params.topics }}
+    <h1 class="note-title">
+        {{ $name }} / {{ .Title }}
+    </h1>
+
+    <div class="grid">
+		{{ if .Params.hero }}
+        <div class="cell -3of12">
+			<img src="{{ .Params.hero }}" class="img-fluid img-thumbnail" />
+        </div>
+        <div class="cell -9of12">
+		{{ else }}
+        <div class="cell">
+		{{ end }}
+			<p>Last update: <span class="mono">{{ dateFormat "2006 Jan 02" .Date }}</span></p>
+            {{ .Content }}
+        </div>
+    </div>
+{{ end }}
