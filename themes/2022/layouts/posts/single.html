@@ -1,14 +1,8 @@
 {{ define "main" }}
-    <div class="row">
-		<div class="col">
-            <h1>{{ .Title }}</h1>
-            <p><i class="material-icons-two-tone">calendar_today</i> <span class="mono">{{ dateFormat "2006 Jan 02" .Date }}</span></p>
-        </div>
-    </div>
+    <article>
+        <h1>{{ .Title }}</h1>
+        <p><span class="mono">{{ dateFormat "2006 Jan 02" .Date }}</span></p>
 
-    <div class="row">
-		<div class="col">
-            {{ .Content }}
-        </div>
-    </div>
+        {{ .Content }}
+    </article>
 {{ end }}

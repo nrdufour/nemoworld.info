@@ -1,16 +1,12 @@
 {{ define "main" }}
-    <div class="page-header">
-        <h1>{{ .Title }}</h1>
-		<p>Trying to collect the recipes I like and tested.</p>
-    </div>
+    <h1>{{ .Title }}</h1>
+	<p>Trying to collect the recipes I like and tested.</p>
 
 	{{ range .Data.Pages }}
-	<div class="row">
-        <div class="col-lg-4 text-center">
-			<a href="{{ .RelPermalink }}">
-				<h3>{{ .Title }}</h3>
-				<img src="/images/recipes/{{ .Params.photo }}" class="img-fluid img-thumbnail" />
-			</a>
+	<div class="grid">
+        <div class="cell -4of12 content" style="text-align: center;">
+			<a href="{{ .RelPermalink }}"><img src="/images/recipes/{{ .Params.photo }}" class="img-fluid img-thumbnail" /></a>
+			<a href="{{ .RelPermalink }}"><p>{{ .Title }}</p></a>
         </div>
     </div>
 	{{ end }}

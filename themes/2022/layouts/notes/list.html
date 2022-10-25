@@ -4,7 +4,7 @@
 
 	<div class="grid" style="gap: 2em;">
 	{{ range $name, $taxonomy := .Site.Taxonomies.topics }}
-		<div class="cell">
+		<div class="cell -3of12 content">
 			<h1>
 				<span style="text-transform: capitalize;">{{ replace $name "-" " " }}</span>
 			</h1>
