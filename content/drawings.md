@@ -4,4 +4,4 @@ draft: false
 title: "Drawings"
 ---
 
-{{< image-gallery gallery_dir="/drawings" >}}
+{{< image-gallery gallery_dir="/gallery/drawings" >}}
