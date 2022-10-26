@@ -1,27 +1,17 @@
 {{ define "main" }}
-    <div class="page-header">
-        <h1>Projects</h1>
-    </div>
+    <h1>Projects</h1>
 
     {{ range .Data.Pages.GroupByParam "project_type" }}
-	<div class="row">
-		<div class="col">
-			<h3>{{ .Key }}</h3>
-		</div>
-	</div>
+	<h2>{{ .Key }}</h2>
+    <div class="grid">
         {{ range .Pages.GroupByParam "started" "desc" }}
             {{ range .Pages }}
-    <div class="row justify-content-center">
-		<div class="col-10">
-            <div class="row">
-                <div class="col-lg-10 col-12">
-					<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-                    <blockquote class="blockquote">{{ .Params.desc }}</blockquote>
-                </div>
-            </div>
+        <div class="cell -6of12 content">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <blockquote class="blockquote">{{ .Params.desc }}</blockquote>
         </div>
-    </div>
             {{ end }}
         {{ end }}
+    </div>
     {{ end }}
 {{ end }}
