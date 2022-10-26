@@ -8,6 +8,7 @@ categories:
 tags:
 - drawings
 - site
+slug: drawing-section
 ---
 
 I've added a new [section](/drawings) to publish some of the drawings I've been doing on the remarkable device.

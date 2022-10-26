@@ -7,6 +7,7 @@ categories:
 - Personal
 - Thoughts
 tags:
+slug: oh-2020
 ---
 
 OK, so I was supposed to "keep tab" on this blog since ... 2018.

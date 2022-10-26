@@ -8,6 +8,7 @@ categories:
 tags:
 - remarkable
 - renderer
+slug: remarkable-custom-renderer
 ---
 
 {{< figure src="remarkable.png" width="25%" >}}
