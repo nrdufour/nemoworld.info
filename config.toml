@@ -19,7 +19,7 @@ assetDir = "static"
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "manni"
+    style = "monokai"
     tabWidth = 4
 
 [menu]
