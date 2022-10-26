@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $name := index .Params.topics }}
     <h1 class="note-title">
-        {{ $name }} / {{ .Title }}
+        <a href="/notes">Notes</a> / {{ $name }} / {{ .Title }}
     </h1>
 
     <div class="grid">
