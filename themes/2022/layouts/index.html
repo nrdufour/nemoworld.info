@@ -17,6 +17,16 @@
 							<br/>
 							<br/>
 							A lot of projects in the TODO list. A few already done and far more to finish obviously.
+							<br/>
+							<br/>
+							<h2>Latest posts</h2>
+							<ul>
+							{{ range first 3 ( (where .Site.RegularPages "Section" "posts").ByDate).Reverse }}
+							<li>
+								{{ dateFormat "2006-01-02" .Date }} <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+							</li>
+							{{ end }}
+							</ul>
 						</div>
 						<div class="cell -3of12" style="text-align: center;">
 							<img src="/images/profile_picture.jpg" />
