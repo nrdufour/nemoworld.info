@@ -16,5 +16,6 @@ You can talk to me on HF bands (mostly 20m, 40m) and VHF (NJ area) with the call
 ### Social medias:
 
 + [Github](https://github.com/nrdufour)
++ [Mastodon](https://gardenstate.social/@nrdufour)
 + [LinkedIn](https://www.linkedin.com/in/nrdufour)
 + [Flickr](https://www.flickr.com/photos/nrdufour/)
