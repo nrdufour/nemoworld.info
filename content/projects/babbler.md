@@ -14,6 +14,5 @@ Each set can have any number of words in it, and each generation will follow a 
 It's suggested to always adding 20% of bad words (insults and alike) to add a "kick" to the final word ;-).
 
 You can find the sources here:
-<ul>
-    <li>Github: <a href="https://github.com/nrdufour/babbler">https://github.com/nrdufour/babbler</a></li>
-</ul>
+
++ Github: <https://github.com/nrdufour/babbler>
