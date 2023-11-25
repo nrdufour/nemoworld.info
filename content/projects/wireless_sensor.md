@@ -6,6 +6,7 @@ title: Wireless Sensor
 started: 2011
 desc: An ongoing project to create a network of wireless sensors reporting temperature/humidity/etc inside/outside.
 weight: 10
+unmaintained: false
 ---
 
 The idea is to create a network of simple wireless sensors reporting mostly the temperature, humidity and pressure (or even light).

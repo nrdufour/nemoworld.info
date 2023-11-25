@@ -5,6 +5,7 @@ project_icon: default.png
 project_type: Software
 started: 2011
 title: URDF
+unmaintained: true
 ---
 
 URDF is an erlang application providing tools to convert RDF triples back and forth with:

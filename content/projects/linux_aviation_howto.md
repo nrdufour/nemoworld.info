@@ -5,6 +5,7 @@ project_type: Document
 title: Linux Aviation HOWTO
 started: 2006
 desc: A TLDP document about opensource softwares for pilots and aviation in general.
+unmaintained: true
 ---
 
 Linux Aviation HOWTO is a TLDP document trying to document all (or close to) opensource tools/programs/projects related to the aviation.

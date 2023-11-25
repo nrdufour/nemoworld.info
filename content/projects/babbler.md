@@ -5,6 +5,7 @@ project_icon: default.png
 project_type: Software
 started: 2004
 title: Babbler
+unmaintained: true
 ---
 
 Babbler is a very old project of mine. The idea was to create new words based on sets of other words reflecting a given topic. The final word is created in such a way that you have the impression of understanding those topics through the new word.

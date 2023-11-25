@@ -1,17 +1,30 @@
 {{ define "main" }}
     <h1>Projects</h1>
 
-    {{ range .Data.Pages.GroupByParam "project_type" }}
-	<h2>{{ .Key }}</h2>
+    <h2>In progress</h2>
     <div class="grid">
-        {{ range .Pages.GroupByParam "started" "desc" }}
-            {{ range .Pages }}
-        <div class="cell -6of12 content">
-            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-            <blockquote class="blockquote">{{ .Params.desc }}</blockquote>
-        </div>
-            {{ end }}
+    {{ range (where .Pages "Params.unmaintained" false).GroupByParam "title"}}
+        {{ range .Pages }}
+            <div class="cell -6of12 content">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <blockquote class="blockquote">{{ .Params.desc }}</blockquote>
+            </div>
         {{ end }}
-    </div>
     {{ end }}
+    </div>
+
+    <hr/>
+
+    <h2>Unmaintained</h2>
+    <div class="grid">
+    {{ range (where .Pages "Params.unmaintained" true).GroupByParam "title"}}
+        {{ range .Pages }}
+            <div class="cell -6of12 content">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <blockquote class="blockquote">{{ .Params.desc }}</blockquote>
+            </div>
+        {{ end }}
+    {{ end }}
+    </div>
+
 {{ end }}

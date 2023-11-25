@@ -5,6 +5,7 @@ project_type: Software
 project_icon: refuge.png
 started: 2011
 desc: Refuge connects data sources between machines and people, coming from devices, peoples or services in a decentralized manner.
+unmaintained: true
 ---
 
 Refuge was a cool project that Benoit Chesneau and I were working on to provide a decentralized platform back in 2011, all the way to at least 2016.
