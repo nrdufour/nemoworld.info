@@ -13,4 +13,9 @@ I took over the document in 2006 and tried to update it since then.
 
 To be honest, I need to update it because no update has been added for quite a while.
 
-**TODO**: Need to add the URL, roadmap.
+---
+
++ [the HOWTO itself](https://tldp.org/HOWTO/html_single/Aviation-HOWTO/)
++ [the HOWTO source](https://github.com/tLDP/LDP/blob/70e18f812445673250145fa5701bb9f9a9b2828c/LDP/howto/docbook/Aviation-HOWTO.xml)
+
+I don't intend to update it, so if you want to take it over, feel free to contact me nrdufour at gmail.com.
