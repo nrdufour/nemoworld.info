@@ -10,4 +10,8 @@ weight: 50
 
 EmbryoSys is an old project in which I wanted to implement the whole system studied in the L.I.S.T. departement in the university Paris VI. This system was a great way to study important concepts in modern system, and designed by its director: François Bouillé.
 
-**TODO**: Add a visual description here.
+---
+
++ Current site: <https://www.embryo-systems.info/>
+
+So far, my idea is mostly to document it first. I'll see on the impl later on.
