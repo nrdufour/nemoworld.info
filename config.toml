@@ -5,6 +5,9 @@ theme = "2022"
 
 assetDir = "static"
 
+# To actually ignore issues with the shortcode "youtube"
+ignoreLogs = ['err-youtube-remote']
+
 [permalinks]
   posts = "posts/:year/:month/:day/:slug/"
   archive = "/oldblog/:year/:month/:day/:slug/"
