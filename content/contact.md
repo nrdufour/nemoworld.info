@@ -6,7 +6,7 @@ title: "Contact Information"
 
 ### Email
 
-nrdufour on gmail.com
+ndufour on ptinem.casa
 
 ### Radio Amateur
 
