@@ -7,5 +7,10 @@
 	<link rel="stylesheet" href="{{ "css/gruvbox-dark.css" | relURL }}">
 	<link rel="stylesheet" href="{{ "css/shim.css" | relURL }}">
 	<link rel="stylesheet" href="{{ "css/lightbox.css" | relURL }}">
-        <meta name="fediverse:creator" content="@nrdufour@gardenstate.social">
+	<meta name="fediverse:creator" content="@nrdufour@gardenstate.social">
+	<link rel="alternate"
+		type="application/rss+xml"
+		href="{{.Site.BaseURL }}posts/index.xml"
+		title="{{ .Site.Title }}">
+  
 </head>

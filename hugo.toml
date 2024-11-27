@@ -11,7 +11,6 @@ ignoreLogs = ['err-youtube-remote']
 [permalinks]
   posts = "posts/:year/:month/:day/:slug/"
   archive = "/oldblog/:year/:month/:day/:slug/"
- 
 
 [markup]
   [markup.highlight]
@@ -57,3 +56,14 @@ ignoreLogs = ['err-youtube-remote']
 
 [taxonomies]
   topic = "topics"
+
+[outputs]
+  home = ['html']
+  section = ['html']
+  taxonomy = ['html']
+  term = ['html']
+
+[params]
+  [params.author]
+    email = 'ndufour@ptinem.casa'
+    name = 'Nicolas R. Dufour'
