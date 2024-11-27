@@ -14,6 +14,8 @@ So why coming back to it? Well, a lot of people I've been following on the fediv
 + [@Daojoan@mastodon.social](https://mastodon.social/@Daojoan) for the deep analysis of the moment and deeply focused way to move past it
 + [@molly0xfff@hachyderm.io](https://hachyderm.io/@molly0xfff) for her awesome help regarding wikipedia and curation
 
+<!--more-->
+
 It's also the fact that I'm *deeply* tired of any "traditional" social medias. They don't bring anything anymore (if they were even bringing something in the first place). And I love that the notion of blogroll or simply using RSS in order to curate yourself what you read/watch/listen seems to come back.
 
 Besides, my previous post was all about removing any usage of google and its services, or any usage of closed platforms of any kind.
