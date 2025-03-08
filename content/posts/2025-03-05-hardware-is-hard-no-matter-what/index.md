@@ -171,7 +171,7 @@ Be mindful of **each** element you are using to troubleshoot a hardware issue, b
 
 Thank you for reading, and have fun!
 
-# Update on 2025-03-08
+# Update on 2025-03-08 {#update-20250308}
 
 All the raspberry pi with the SSD extension card are in good shape and I ended up changing the usb connection with a high speed **flexible** [cable](https://www.amazon.com/dp/B0C9J1QQV1) to avoid mechanical tension over time.
 
