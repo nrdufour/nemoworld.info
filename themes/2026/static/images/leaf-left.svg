@@ -1,0 +1,22 @@
+<svg width="50" height="30" viewBox="0 0 50 30" xmlns="http://www.w3.org/2000/svg">
+  <!-- Single curly leaf - left side with stem -->
+  <g stroke="#64b5f6" fill="#64b5f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Stem -->
+    <path d="M 48 15 L 38 15" fill="none" stroke-width="1.8"/>
+
+    <!-- Leaf outline with curl -->
+    <path d="M 38 15 Q 33 12, 28 10 Q 23 8, 18 9 Q 13 10, 11 13 Q 9 16, 11 19 Q 13 22, 18 23 Q 23 24, 28 22 Q 33 20, 38 15"
+          fill="#64b5f6" opacity="0.25" stroke="none"/>
+    <path d="M 38 15 Q 33 12, 28 10 Q 23 8, 18 9 Q 13 10, 11 13 Q 9 16, 11 19 Q 13 22, 18 23 Q 23 24, 28 22 Q 33 20, 38 15"
+          fill="none"/>
+
+    <!-- Central rib (vein) -->
+    <path d="M 38 15 Q 31 15, 23 16 Q 15 17, 11 16" fill="none" stroke-width="1.5" opacity="0.8"/>
+
+    <!-- Side veins -->
+    <path d="M 31 15 Q 29 12, 27 11" fill="none" stroke-width="1" opacity="0.6"/>
+    <path d="M 31 15 Q 29 18, 27 19" fill="none" stroke-width="1" opacity="0.6"/>
+    <path d="M 23 16 Q 21 13, 19 12" fill="none" stroke-width="1" opacity="0.6"/>
+    <path d="M 23 16 Q 21 19, 19 20" fill="none" stroke-width="1" opacity="0.6"/>
+  </g>
+</svg>

@@ -404,6 +404,9 @@ nav {
 
 .nav-brand {
   margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
 }
 
 .nav-brand a {
@@ -418,6 +421,14 @@ nav {
 .nav-brand a:hover {
   color: var(--accent-tertiary);
   background-color: transparent;
+}
+
+.leaf-ornament {
+  width: 50px;
+  height: 30px;
+  opacity: 0.5;
+  flex-shrink: 0;
+  align-self: center;
 }
 
 .nav-links {
