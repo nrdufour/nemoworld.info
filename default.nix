@@ -2,6 +2,6 @@
 with nixpkgs; mkShell {
   packages = [
     hugo
-    go-task
+    just
   ];
 }
