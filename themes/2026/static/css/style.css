@@ -908,12 +908,30 @@ hr {
   margin: 2em 0;
 }
 
+/* Ornamental Divider with SVG */
+.ornament-divider {
+  position: relative;
+  width: 100%;
+  margin: 3em auto 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.ornament-left,
+.ornament-right {
+  width: 120px;
+  height: 60px;
+  opacity: 0.6;
+}
+
 /* Footer */
 footer {
-  margin-top: 3em;
+  margin-top: 0;
   padding: 1.5em 0;
   text-align: center;
-  border-top: 1px solid var(--bg-tertiary);
+  border-top: none;
   font-size: 0.875em;
   color: var(--text-secondary);
 }

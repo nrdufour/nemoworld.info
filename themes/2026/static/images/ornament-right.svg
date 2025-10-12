@@ -1,0 +1,29 @@
+<svg width="120" height="60" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Botanical ornament - right side (mirrored) -->
+  <g stroke="#64b5f6" fill="#64b5f6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Main stem -->
+    <path d="M 110 30 Q 80 30, 50 30 Q 30 30, 10 30" fill="none"/>
+
+    <!-- Leaves on right -->
+    <path d="M 105 30 Q 110 20, 102 18" fill="none"/>
+    <path d="M 105 30 Q 110 40, 102 42" fill="none"/>
+
+    <!-- Leaves in middle-right -->
+    <path d="M 85 30 Q 92 18, 84 15" fill="none"/>
+    <path d="M 85 30 Q 92 42, 84 45" fill="none"/>
+
+    <!-- Leaves in middle-left -->
+    <path d="M 65 30 Q 72 20, 64 17" fill="none"/>
+    <path d="M 65 30 Q 72 40, 64 43" fill="none"/>
+
+    <!-- Leaves on left -->
+    <path d="M 45 30 Q 52 22, 44 19" fill="none"/>
+    <path d="M 45 30 Q 52 38, 44 41" fill="none"/>
+
+    <!-- Small decorative buds -->
+    <circle cx="102" cy="18" r="2.5" opacity="0.8"/>
+    <circle cx="102" cy="42" r="2.5" opacity="0.8"/>
+    <circle cx="84" cy="15" r="2.5" opacity="0.8"/>
+    <circle cx="84" cy="45" r="2.5" opacity="0.8"/>
+  </g>
+</svg>
