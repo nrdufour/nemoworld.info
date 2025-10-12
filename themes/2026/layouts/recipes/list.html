@@ -1,0 +1,15 @@
+{{ define "main" }}
+    <h1>{{ .Title }}</h1>
+	<p>Trying to collect the recipes I like and tested.</p>
+
+	<div class="recipes-grid">
+	{{ range .Data.Pages }}
+        <div class="recipe-card">
+			<a href="{{ .RelPermalink }}">
+				<img src="/images/recipes/{{ .Params.photo }}" alt="{{ .Title }}" />
+				<h3>{{ .Title }}</h3>
+			</a>
+        </div>
+	{{ end }}
+	</div>
+{{ end }}

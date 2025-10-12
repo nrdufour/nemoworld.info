@@ -1,0 +1,30 @@
+{{ define "main" }}
+    <h1>Projects</h1>
+
+    <h2>In progress</h2>
+    <div class="projects-grid">
+    {{ range (where .Pages "Params.unmaintained" false).GroupByParam "title"}}
+        {{ range .Pages }}
+            <div class="project-card">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <p class="project-desc">{{ .Params.desc }}</p>
+            </div>
+        {{ end }}
+    {{ end }}
+    </div>
+
+    <hr/>
+
+    <h2>Unmaintained</h2>
+    <div class="projects-grid">
+    {{ range (where .Pages "Params.unmaintained" true).GroupByParam "title"}}
+        {{ range .Pages }}
+            <div class="project-card">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <p class="project-desc">{{ .Params.desc }}</p>
+            </div>
+        {{ end }}
+    {{ end }}
+    </div>
+
+{{ end }}

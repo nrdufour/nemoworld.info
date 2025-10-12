@@ -1,0 +1,13 @@
+{{ $dir := string (.Get "gallery_dir") }}
+<div class="image-gallery">
+{{ range (readDir (print "/static" $dir)) }}
+  {{- $image := resources.Get (printf "%s/%s" $dir .Name) -}}
+  {{- $imagetitle := index (split .Name ".") 0 -}}
+  <figure>
+    <a href="{{ ($image.Fit "1600x1600 q50").Permalink }}" target="_blank" rel="noopener">
+      <img src="{{ ($image.Fill "300x300 q50").Permalink }}" alt="{{ $imagetitle }}" title="{{ $imagetitle }}" loading="lazy">
+    </a>
+    <figcaption>{{ $imagetitle }}</figcaption>
+  </figure>
+{{ end }}
+</div>

@@ -1,0 +1,7 @@
+{{ define "main" }}
+    <article>
+        <h1>{{ .Title }}</h1>
+        <p><span class="mono">{{ dateFormat "2006 Jan 02" .Date }}</span> {{ partial "reading-time.html" . }}</p>
+        {{ .Content }}
+    </article>
+{{ end }}

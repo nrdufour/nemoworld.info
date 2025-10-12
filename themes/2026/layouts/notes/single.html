@@ -1,0 +1,26 @@
+{{ define "main" }}
+{{ $name := index .Params.topics }}
+    <article class="note">
+		<div class="note-breadcrumb">
+			<a href="/notes">Notes</a> / <span style="text-transform: capitalize;">{{ replace $name "-" " " }}</span> / {{ .Title }}
+		</div>
+		<h1>{{ .Title }}</h1>
+
+		{{ if .Params.hero }}
+		<div class="note-with-hero">
+			<div class="note-hero">
+				<img src="{{ .Params.hero }}" alt="{{ .Title }}" />
+			</div>
+			<div class="note-content">
+				<p class="note-meta"><span class="mono">Last update: {{ dateFormat "2006 Jan 02" .Date }}</span></p>
+				{{ .Content }}
+			</div>
+		</div>
+		{{ else }}
+		<div class="note-content">
+			<p class="note-meta"><span class="mono">Last update: {{ dateFormat "2006 Jan 02" .Date }}</span></p>
+			{{ .Content }}
+		</div>
+		{{ end }}
+	</article>
+{{ end }}

@@ -1,0 +1,16 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nemoworld - {{ .Title }}</title>
+	<script src="{{ "js/theme.js" | relURL }}"></script>
+	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+	<meta name="fediverse:creator" content="@nrdufour@gardenstate.social">
+	<link rel="alternate"
+		type="application/rss+xml"
+		href="{{.Site.BaseURL }}posts/index.xml"
+		title="Nemoworld - {{ .Title }}">
+	<script defer data-domain="nemoworld.info" src="https://plausible.io/js/script.outbound-links.js"></script>
+	<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+	<script defer src="/js/gallery.js"></script>
+	<script defer src="/js/social-icons.js"></script>
+</head>

@@ -1,0 +1,13 @@
+{{ define "main" }}
+    <h1>Blog posts</h1>
+
+	{{ range (where .Site.RegularPages "Type" "posts").GroupByDate "2006" }}
+		<h2 class="mono">{{ .Key }}</h2>
+		{{ range .Pages.ByDate.Reverse }}
+		<span class="mono">{{ dateFormat "Jan 02" .Date }}</span> &nbsp;-&nbsp;  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+		<br/>
+		{{ end }}
+		<br/>
+	{{ end }}
+
+{{ end }}

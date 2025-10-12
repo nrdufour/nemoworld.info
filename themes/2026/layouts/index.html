@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{- partial "head.html" . -}}
+    <body>
+		<a style="display: none;" rel="me" href="https://gardenstate.social/@nrdufour">Mastodon</a>
+		<div class="container">
+			<header>
+			{{- partial "nav.html" . -}}
+			</header>
+			<main>
+				<div class="home-content">
+					<div class="home-text">
+						<h1>Nicolas Dufour</h1>
+						<p>Senior Staff Platform Engineer with a foot in geophysics and another for weird physics theories.</p>
+						<p>A lot of projects in the TODO list. A few already done and far more to finish obviously.</p>
+						<h2>Latest posts</h2>
+						<div class="latest-posts">
+						{{ range first 5 ( (where .Site.RegularPages "Section" "posts").ByDate).Reverse }}
+							<div class="post-item">
+								<span class="post-date mono">{{ dateFormat "2006 Jan 02" .Date }}</span>
+								<a href="{{ .RelPermalink }}" class="post-title">{{ .Title }}</a>
+							</div>
+						{{ end }}
+						</div>
+					</div>
+					<div class="home-image">
+						<img src="/images/profile_picture.jpg" alt="Nicolas Dufour" />
+						<a href="/contact">Contact me</a>
+					</div>
+				</div>
+			</main>
+			{{- partial "footer.html" . -}}
+		</div>
+    </body>
+</html>

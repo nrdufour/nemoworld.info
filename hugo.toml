@@ -1,7 +1,7 @@
 baseURL = "https://www.nemoworld.info"
 languageCode = "en-us"
 title = "Nemoworld"
-theme = "2022"
+theme = "2026"
 
 assetDir = "static"
 
@@ -20,8 +20,7 @@ ignoreLogs = ['err-youtube-remote']
     lineNoStart = 1
     lineNos = false
     lineNumbersInTable = true
-    noClasses = true
-    style = "monokai"
+    noClasses = false
     tabWidth = 4
 
 [menu]

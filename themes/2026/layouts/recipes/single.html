@@ -1,0 +1,13 @@
+{{ define "main" }}
+    <article class="recipe">
+		<h1>{{ .Title }}</h1>
+		<div class="recipe-content">
+			<div class="recipe-image">
+				<img src="/images/recipes/{{ .Params.photo }}" alt="{{ .Title }}" />
+			</div>
+			<div class="recipe-text">
+				{{ .Content }}
+			</div>
+		</div>
+	</article>
+{{ end }}

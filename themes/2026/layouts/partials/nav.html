@@ -1,0 +1,17 @@
+<nav>
+	<div class="nav-brand">
+		<a href="/">Nemoworld</a>
+	</div>
+	<div class="nav-links">
+	{{- range $index, $element := .Site.Menus.nav -}}
+		{{- if ne $index 0 }} // {{ end -}}
+		{{- $active := false -}}
+		{{- if eq .URL "/" -}}
+			{{- $active = eq $.RelPermalink "/" -}}
+		{{- else -}}
+			{{- $active = or (hasPrefix $.RelPermalink .URL) (eq $.Section (strings.TrimPrefix "/" .URL | strings.TrimSuffix "/")) -}}
+		{{- end -}}
+		<a href="{{ .URL }}" {{ if $active }}class="active"{{ end }}>{{ .Name }}</a>
+	{{- end }}
+	</div>
+</nav>
