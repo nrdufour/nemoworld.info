@@ -41,32 +41,13 @@
 
   // Wait for DOM to be ready
   document.addEventListener('DOMContentLoaded', function() {
-    // Create and add theme toggle button and RSS link
-    const nav = document.querySelector('.nav-links');
-    if (nav) {
-      // RSS link
-      const rssSeparator = document.createTextNode(' // ');
-      const rssLink = document.createElement('a');
-      rssLink.href = '/posts/index.xml';
-      rssLink.className = 'rss-link';
-      rssLink.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>';
-      rssLink.setAttribute('aria-label', 'Subscribe to RSS feed');
-      rssLink.setAttribute('title', 'Subscribe to RSS feed');
-
-      // Theme toggle
-      const themeSeparator = document.createTextNode(' // ');
-      const toggle = document.createElement('button');
-      toggle.id = 'theme-toggle';
-      toggle.className = 'theme-toggle';
+    // Initialize the theme toggle button that's already in the HTML
+    const toggle = document.getElementById('theme-toggle');
+    if (toggle) {
       const currentTheme = getThemePreference();
       toggle.textContent = currentTheme === 'light' ? '☾' : '☀';
       toggle.setAttribute('aria-label', currentTheme === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
       toggle.onclick = toggleTheme;
-
-      nav.appendChild(rssSeparator);
-      nav.appendChild(rssLink);
-      nav.appendChild(themeSeparator);
-      nav.appendChild(toggle);
     }
 
     // Listen for system theme changes
