@@ -5,7 +5,7 @@ title: DIY and Opensource
 
 I recently stumbled upon an interesting article talking about the [13 open source hardware companies making $1 million or more](http://singularityhub.com/2010/05/10/13-open-source-hardware-companies-making-1-million-or-more-video/) and ended up finding even more.
 
-Time to recap a bit! So here is the list of companies presented in the conference (you see download the slides <a href="http://www.adafruit.com/pt/fooeastignite2010.pdf">here</a> too).
+Time to recap a bit! So here is the list of companies presented in the conference (you see download the slides [here](http://www.adafruit.com/pt/fooeastignite2010.pdf) too).
 
 * Adafruit <http://www.adafruit.com/>
 * Arduino <http://www.arduino.cc/>
@@ -16,7 +16,7 @@ Time to recap a bit! So here is the list of companies presented in the conferenc
 * DIY Drones <http://diydrones.com/>
 * Evil Mad Scientist Laboratories <http://www.evilmadscientist.com>
 * Liquidware <http://www.liquidware.com/>
-* Makerbot <http://www.makerbot.com/>
+* Makerbot <http://www.makerbot.com/>
 * Makershed <http://www.makershed.com/>
 * Parallax <http://www.parallax.com/>
 * Seeed Studios <http://www.seeedstudio.com/>
@@ -31,7 +31,7 @@ DIY Biology links:
 * <http://openwetware.org/wiki/DNA_extraction_from_tissue>
 * <http://diybio.org>
 
-TO SORT ... 
+TO SORT ...
 
 * <http://egg-bot.com/>
 * <http://thecorpora.com/blog/a>

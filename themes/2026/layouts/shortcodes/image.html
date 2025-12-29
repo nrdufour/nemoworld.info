@@ -1,1 +1,24 @@
-<img src="{{ index .Params 0 }}" />
+{{- $src := .Get "src" -}}
+{{- $link := .Get "link" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $width := .Get "width" -}}
+{{- $height := .Get "height" -}}
+{{- $float := .Get "float" -}}
+
+{{- $style := "" -}}
+{{- if eq $float "left" -}}
+  {{- $style = "float: left; margin-right: 1em; margin-bottom: 0.5em;" -}}
+{{- else if eq $float "right" -}}
+  {{- $style = "float: right; margin-left: 1em; margin-bottom: 0.5em;" -}}
+{{- end -}}
+
+{{- $imgAttrs := printf `src="%s" alt="%s"` $src $alt -}}
+{{- with $width }}{{ $imgAttrs = printf `%s width="%s"` $imgAttrs . }}{{ end -}}
+{{- with $height }}{{ $imgAttrs = printf `%s height="%s"` $imgAttrs . }}{{ end -}}
+{{- with $style }}{{ $imgAttrs = printf `%s style="%s"` $imgAttrs . }}{{ end -}}
+
+{{- if $link -}}
+<a href="{{ $link }}"><img {{ $imgAttrs | safeHTMLAttr }} /></a>
+{{- else -}}
+<img {{ $imgAttrs | safeHTMLAttr }} />
+{{- end -}}

@@ -3,7 +3,7 @@ date: 2010-06-28T00:00:00Z
 title: Back to the basics
 ---
 
-<img src="http://ecx.images-amazon.com/images/I/41WRZZP314L._SL500_AA300_.jpg" alt="The Road To Reality" style="float: left;" />
+{{< image src="http://ecx.images-amazon.com/images/I/41WRZZP314L._SL500_AA300_.jpg" alt="The Road To Reality" float="left" >}}
 
 In a previous post I was talking of this great course provided by MIT on electromagnetism with Walter Lewin as the teacher.
 
@@ -16,6 +16,4 @@ This book takes the bet to explain you the laws of the universe even if you are 
 
 First chapter: the roots of science. After all this is the first step. What are the law governing our universe. What is the goal of science. What kind of truth is there.
 
-<p style="text-align: center;">
-<img src="/img/back-to-the-basics/worlds.png" alt="The 3 worlds" width="350" height="350" style="float: none;" />
-</p>
+{{< image src="/img/back-to-the-basics/worlds.png" alt="The 3 worlds" width="350" height="350" >}}

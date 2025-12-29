@@ -7,26 +7,17 @@ Spring is finally here!
 
 Some time spent in the arboretum seeing the first flowers of the new season.
 
-<style type="text/css">
-img {
-  float: none;
-}
-</style>
+Crocuses:
 
-<p>
-Crocuses:<br/>
-<a href="/img/spring-is-here/crocuses.jpg"><img src="/img/spring-is-here/crocuses_thumb.jpg" width="320" height="240" /></a>
-</p>
+{{< image src="/img/spring-is-here/crocuses_thumb.jpg" link="/img/spring-is-here/crocuses.jpg" width="320" height="240" >}}
 
-<p>
-Creepers:<br/>
-<a href="/img/spring-is-here/creepers.jpg"><img src="/img/spring-is-here/creepers_thumb.jpg" width="320" height="240" /></a>
-</p>
+Creepers:
 
-<p>
-A small blue flower:<br>
-<a href="/img/spring-is-here/smallblueflower.jpg"><img src="/img/spring-is-here/smallblueflower_thumb.jpg" width="320" height="240" /></a>
-</p>
+{{< image src="/img/spring-is-here/creepers_thumb.jpg" link="/img/spring-is-here/creepers.jpg" width="320" height="240" >}}
+
+A small blue flower:
+
+{{< image src="/img/spring-is-here/smallblueflower_thumb.jpg" link="/img/spring-is-here/smallblueflower.jpg" width="320" height="240" >}}
 
 Here is a view on the arboretum:
 
