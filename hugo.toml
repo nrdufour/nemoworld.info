@@ -14,6 +14,8 @@ ignoreLogs = ['err-youtube-remote']
   archive = "/oldblog/:year/:month/:day/:slug/"
 
 [markup]
+  [markup.goldmark.renderer]
+    unsafe = true
   [markup.highlight]
     codeFences = true
     guessSyntax = true
