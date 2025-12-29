@@ -2,4 +2,4 @@
 
 This is the hugo site for the domain nemoworld.info.
 
-Activity: 1994-2024
+Activity: 1994-present
