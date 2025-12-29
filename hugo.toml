@@ -10,6 +10,7 @@ ignoreLogs = ['err-youtube-remote']
 
 [permalinks]
   posts = "posts/:year/:month/:day/:slug/"
+  til = "til/:year/:month/:day/:slug/"
   archive = "/oldblog/:year/:month/:day/:slug/"
 
 [markup]
@@ -28,6 +29,10 @@ ignoreLogs = ['err-youtube-remote']
     name = "Blog"
     url = "/posts/"
     weight = 10
+  [[menu.nav]]
+    name = "TIL"
+    url = "/til/"
+    weight = 15
   [[menu.nav]]
     name = "Projects"
     url = "/projects/"

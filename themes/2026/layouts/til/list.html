@@ -1,0 +1,13 @@
+{{ define "main" }}
+    <h1>Today I Learned</h1>
+    <p>Short notes about things I learn day to day.</p>
+
+    {{ range (where .Site.RegularPages "Type" "til").GroupByDate "2006" }}
+        <h2 class="mono">{{ .Key }}</h2>
+        {{ range .Pages.ByDate.Reverse }}
+        <span class="mono">{{ dateFormat "Jan 02" .Date }}</span> &nbsp;-&nbsp; <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.topics }}{{ $topic := index . 0 }} <span class="til-topic">[{{ replace $topic "-" " " }}]</span>{{ end }}
+        <br/>
+        {{ end }}
+        <br/>
+    {{ end }}
+{{ end }}

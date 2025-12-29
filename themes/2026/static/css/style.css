@@ -768,6 +768,19 @@ main {
   flex: 1;
 }
 
+/* TIL (Today I Learned) */
+.til-breadcrumb {
+  color: var(--text-secondary);
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+
+.til-topic {
+  color: var(--text-secondary);
+  font-size: 0.85em;
+  text-transform: capitalize;
+}
+
 /* Images */
 img {
   max-width: 100%;

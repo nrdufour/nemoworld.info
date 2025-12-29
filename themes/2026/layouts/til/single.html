@@ -1,0 +1,10 @@
+{{ define "main" }}
+    <article class="til">
+        <div class="til-breadcrumb">
+            <a href="/til">TIL</a>{{ with .Params.topics }}{{ $topic := index . 0 }} / <span style="text-transform: capitalize;">{{ replace $topic "-" " " }}</span>{{ end }} / {{ .Title }}
+        </div>
+        <h1>{{ .Title }}</h1>
+        <p><span class="mono">{{ dateFormat "2006 Jan 02" .Date }}</span> {{ partial "reading-time.html" . }}</p>
+        {{ .Content }}
+    </article>
+{{ end }}
