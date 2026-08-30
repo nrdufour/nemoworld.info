@@ -16,6 +16,11 @@ host := env_var_or_default("NEMOWORLD_HOST", "www.nemoworld.info")
 # and the web host holds only the matching public key.
 publish_key := env_var_or_default("NEMOWORLD_PUBLISH_KEY", "/run/secrets/nemoworld/publish_ssh_key")
 
+# Refuse to publish if it would delete more than this many files. A safety
+# net against a broken build wiping the site, not a tuning knob — raise it
+# inline for the rare publish that really does remove a lot.
+max_delete := env_var_or_default("NEMOWORLD_MAX_DELETE", "100")
+
 # Default recipe - list available commands
 default:
     @just --list
@@ -150,8 +155,36 @@ publish:
     # host generates its SSH key at first boot rather than baking it into the
     # snapshot, so after `just cloud destroy` + `create` its key is genuinely
     # new — drop the stale known_hosts line then, and only then.
-    rsync -rlptvc --delete \
-      -e "ssh -i {{ publish_key }} -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new" \
-      "$out/" "publish@{{ host }}:"
+    # Pre-flight: count what --delete would remove, and refuse BEFORE sending
+    # anything. `set -e` catches hugo *failing*; it cannot catch hugo
+    # *succeeding with almost nothing* — an emptied content/, a config that
+    # silently skips a section, the wrong branch checked out. --delete would
+    # replicate that mistake onto the live site.
+    #
+    # This is a dry run, not --max-delete. --max-delete only stops deletions
+    # once the limit is hit, so the first N still happen and the site is left
+    # mangled — verified the hard way. A dry run is the only form of this
+    # check that leaves the site untouched when it trips.
+    #
+    # A full build is ~209 files in ~268 directories, so 100 is far more than
+    # any real edit and far less than a wipe.
+    ssh_cmd="ssh -i {{ publish_key }} -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new"
+    doomed=$(rsync -rlptcn --delete -v -e "$ssh_cmd" \
+      "$out/" "publish@{{ host }}:" | grep -c '^deleting ' || true)
+
+    if [ "$doomed" -gt {{ max_delete }} ]; then
+      echo >&2
+      echo "ERROR: this publish would delete $doomed files. Refusing." >&2
+      echo "       Nothing was sent; the live site is untouched." >&2
+      echo "       A build this much smaller than what is deployed usually" >&2
+      echo "       means an empty content/, the wrong branch, or a broken" >&2
+      echo "       config rather than a genuine deletion." >&2
+      echo "       If the deletion really is intended, re-run with:" >&2
+      echo "         NEMOWORLD_MAX_DELETE=$((doomed + 1)) just publish" >&2
+      exit 1
+    fi
+    [ "$doomed" -gt 0 ] && echo "==> will remove $doomed stale file(s)" || true
+
+    rsync -rlptvc --delete -e "$ssh_cmd" "$out/" "publish@{{ host }}:"
 
     echo "published to {{ host }}"
