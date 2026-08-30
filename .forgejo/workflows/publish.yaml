@@ -1,0 +1,35 @@
+# Publish the site to nemoworld, the public web host on Hetzner Cloud.
+#
+# This workflow deliberately contains no deployment logic: it checks out the
+# repo and calls `just publish`, the same recipe run by hand on calypso. One
+# mechanism, two triggers — so a publish from a laptop and a publish from CI
+# cannot drift apart.
+#
+# runs-on: native is required. The publish key is a sops secret rendered onto
+# the runner host at /run/secrets/nemoworld/publish_ssh_key, readable by the
+# runner's DynamicUser through the nemoworld-publish group (wired up in
+# avalanche: nixos/hosts/hawk/forgejo/forgejo-runner.nix). A container job
+# cannot see that path.
+name: Publish
+
+on:
+  push:
+    branches: [main]
+  # So a rebuilt-from-scratch web host can be repopulated from the Actions UI
+  # without pushing an empty commit.
+  workflow_dispatch:
+
+concurrency:
+  # Two overlapping rsyncs into the same web root would interleave. Never
+  # cancel one in flight: a half-applied --delete is a broken site.
+  group: publish-nemoworld
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: native
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Build and publish
+        run: nix develop --command just publish
