@@ -2,6 +2,7 @@ baseURL = "https://www.nemoworld.info"
 languageCode = "en-us"
 title = "Nemoworld"
 theme = "2026"
+enableRobotsTXT = true
 
 assetDir = "static"
 
@@ -62,7 +63,7 @@ ignoreLogs = ['err-youtube-remote']
   topic = "topics"
 
 [outputs]
-  home = ['html']
+  home = ['html', 'robots']
   section = ['html']
   taxonomy = ['html']
   term = ['html']
