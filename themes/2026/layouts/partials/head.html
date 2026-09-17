@@ -1,7 +1,73 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Nemoworld - {{ .Title }}</title>
+
+	{{/* Title: page title first (SEO), plain site title on home */}}
+	<title>{{ if .IsHome }}{{ .Site.Title }}{{ else if .Title }}{{ .Title }} · {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+
+	{{/* Description: page description > section description > home: site description > summary fallback */}}
+	{{ $description := "" }}
+	{{ with .Description }}{{ $description = . }}
+	{{ else }}{{ with .Params.description }}{{ $description = . }}
+	{{ else }}{{ if .IsHome }}{{ $description = .Site.Params.description }}{{ else }}{{ $description = .Summary | plainify | truncate 160 }}{{ end }}{{ end }}{{ end }}
+	<meta name="description" content="{{ $description }}">
+
+	{{/* Canonical URL */}}
+	<link rel="canonical" href="{{ .Permalink }}">
+
+	{{/* Image for social previews: page images > site default banner (processed to 1200x630) */}}
+	{{ $image := "" }}
+	{{ with .Params.images }}{{ $image = index . 0 }}
+	{{ else }}{{ with resources.Get "images/rack-banner.jpg" }}{{ $image = (.Fill "1200x630").Permalink }}{{ end }}{{ end }}
+
+	{{/* Open Graph */}}
+	<meta property="og:site_name" content="{{ .Site.Title }}">
+	<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+	<meta property="og:description" content="{{ $description }}">
+	<meta property="og:url" content="{{ .Permalink }}">
+	<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+	{{ with $image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+	{{ if .IsPage }}{{ with .Date }}<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}{{ end }}
+
+	{{/* Twitter Card */}}
+	<meta name="twitter:card" content="{{ if $image }}summary_large_image{{ else }}summary{{ end }}">
+	<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+	<meta name="twitter:description" content="{{ $description }}">
+	{{ with $image }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
+
+	{{/* Structured data (JSON-LD) for rich results */}}
+	{{ if .IsHome }}
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebSite",
+		"name": {{ .Site.Title }},
+		"url": {{ .Site.BaseURL }},
+		"description": {{ .Site.Params.description | default $description }}
+	}
+	</script>
+	{{ else if .IsPage }}
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": {{ if eq .Section "posts" }}"BlogPosting"{{ else }}"WebPage"{{ end }},
+		"headline": {{ .Title }},
+		"description": {{ $description }},
+		"url": {{ .Permalink }},
+		"mainEntityOfPage": {{ .Permalink }},
+		"author": {
+			"@type": "Person",
+			"name": {{ .Site.Params.author.name }}
+		},
+		"dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }},
+		"publisher": {
+			"@type": "Person",
+			"name": {{ .Site.Params.author.name }}
+		}
+	}
+	</script>
+	{{ end }}
+
 	<script src="{{ "js/theme.js" | relURL }}"></script>
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 	<link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -10,8 +76,8 @@
 	<meta name="fediverse:creator" content="@nrdufour@gardenstate.social">
 	<link rel="alternate"
 		type="application/rss+xml"
-		href="{{.Site.BaseURL }}posts/index.xml"
-		title="Nemoworld - {{ .Title }}">
+		href="{{ .Site.BaseURL }}posts/index.xml"
+		title="Nemoworld - Blog RSS">
 	<script defer src="/js/gallery.js"></script>
 	<script defer src="/js/social-icons.js"></script>
 </head>
