@@ -1,10 +1,11 @@
 baseURL = "https://www.nemoworld.info"
-languageCode = "en-us"
+locale = "en-us"
 title = "Nemoworld"
 theme = "2026"
 enableRobotsTXT = true
 
-assetDir = "static"
+# URLs without accented characters (é -> e etc.)
+removePathAccents = true
 
 # To actually ignore issues with the shortcode "youtube"
 ignoreLogs = ['err-youtube-remote']
@@ -69,6 +70,7 @@ ignoreLogs = ['err-youtube-remote']
   term = ['html']
 
 [params]
+  description = "Nemoworld is the personal site of Nicolas R. Dufour — platform engineer, geophysicist and tinkerer. Blog, projects, notes, recipes, drawings and astronomy."
   [params.author]
     email = 'ndufour@ptinem.casa'
     name = 'Nicolas R. Dufour'

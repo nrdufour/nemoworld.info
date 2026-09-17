@@ -1,6 +1,8 @@
 ---
 date: 2004-09-13T00:00:00Z
 title: Ptit séjour à Budapest
+aliases:
+  - "/posts/2004/09/13/ptit-séjour-à-budapest/"
 ---
 
 Et oui ! Me voila &agrave; Budapest, &eacute;crivant depuis un cybercaf&eacute; de l’avenue Andrassi sur un clavier allemand !!!
