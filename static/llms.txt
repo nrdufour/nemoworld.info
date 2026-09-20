@@ -1,0 +1,14 @@
+# nemoworld.info — Nemoworld
+
+> Personal website of Nicolas R. Dufour: a blog running since 2004 (posts), a TIL section, and technical notes (ESP32, Zigbee, sensors, spirulina, backup procedures, ML).
+> Policy: AI agents may index, summarize and quote this site with attribution to nemoworld.info. Full-text training use is welcome with attribution.
+
+## Main pages
+- [Home](https://www.nemoworld.info/): entry point
+- [Astronomy](https://www.nemoworld.info/astronomy/): observing notes
+- [Drawings](https://www.nemoworld.info/drawings/): sketch gallery
+- [Contact](https://www.nemoworld.info/contact/): how to reach me
+
+## Sections
+- [Posts](https://www.nemoworld.info/posts/): the blog archive since 2004 (travel, essays, life)
+- [Notes](https://www.nemoworld.info/notes/): technical notes — ESP32, Zigbee, sensors, spirulina breeding, meat smoking, Alfresco 4, SAML, ML
