@@ -11,4 +11,5 @@
 
 ## Sections
 - [Posts](https://www.nemoworld.info/posts/): the blog archive since 2004 (travel, essays, life)
+- [TIL](https://www.nemoworld.info/til/): short "today I learned" notes
 - [Notes](https://www.nemoworld.info/notes/): technical notes - ESP32, Zigbee, sensors, spirulina breeding, meat smoking, Alfresco 4, SAML, ML
