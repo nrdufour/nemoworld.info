@@ -61,6 +61,14 @@ It sticks because of an asymmetry. A bad result confirms the prior ("see, still 
 
 I have watched this cycle repeat at least once or twice in my own lifetime. I remember saying, around the time of Java 1.1, that code generation was the future, and getting laughed at for it. The tools I was pointing at were clumsy, and most of them died. The direction was right anyway.
 
+## The most dangerous thought
+
+I am not the first to notice this. Bret Victor made almost the same argument in 2013, in a talk called "The Future of Programming", delivered in character as a programmer from 1973. He opens on the same ground as this post: the IBM 650, the SOAP assembler, von Neumann asking why anyone would want more than machine code, and FORTRAN opposed by almost every programmer of the day because it was wasteful, it could not possibly work, and no respectable programmer would use it, only sissies.
+
+His point is not about any single technology. It is about the reaction. Technology changes quickly, people's minds change slowly, and there can be outright hostility to a way of working that asks you to unlearn what you already know. The trap, he says, is the most dangerous thought a creative person can have: that you know what you are doing. Because once you are certain you know what programming is, someone shows you the next thing and it goes right over your head.
+
+He then walks through four directions the 1970s believed programming was heading, none of which happened: direct manipulation instead of code, goals instead of procedures, spatial representations instead of text files, concurrency instead of sequential execution. Same pattern, one more time. Directions that were right about where things were going, dismissed by a field that was sure it knew what it was doing.
+
 ## How it actually gets settled
 
 Not by winning the argument. High-level languages did not beat assembly because someone proved the skeptics wrong in a debate. They won because the economics flipped: hardware got cheap and programmers got expensive, and "a bit slower but ten times faster to write" beat "optimal and slow to produce" in every budget that mattered. The same thing is happening here, for the same reason.
@@ -82,3 +90,4 @@ Keep reviewing ;)
 - "Real Programmers Don't Use Pascal", Datamation, 1983 <https://www.pbm.com/~lindahl/real.programmers.html>
 - Ken Thompson, "Reflections on Trusting Trust", 1984 <https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf>
 - DO-178C and compiler qualification <https://www.rapitasystems.com/do178>
+- Bret Victor, "The Future of Programming", DBX 2013 <https://vimeo.com/71278954>
