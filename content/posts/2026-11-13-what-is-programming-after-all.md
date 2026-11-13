@@ -1,5 +1,5 @@
 ---
-title: "The Compiler Was the First Generated Code"
+title: "What Is Programming, After All?"
 date: 2026-11-13T10:00:00Z
 draft: false
 author: "Nicolas Dufour"
@@ -68,6 +68,8 @@ I am not the first to notice this. Bret Victor made almost the same argument in 
 His point is not about any single technology. It is about the reaction. Technology changes quickly, people's minds change slowly, and there can be outright hostility to a way of working that asks you to unlearn what you already know. The trap, he says, is the most dangerous thought a creative person can have: that you know what you are doing. Because once you are certain you know what programming is, someone shows you the next thing and it goes right over your head.
 
 He then walks through four directions the 1970s believed programming was heading, none of which happened: direct manipulation instead of code, goals instead of procedures, spatial representations instead of text files, concurrency instead of sequential execution. Same pattern, one more time. Directions that were right about where things were going, dismissed by a field that was sure it knew what it was doing.
+
+And he is careful to say what this is not: not a call for ignorance, but for a kind of informed skepticism, for holding your tools as hints instead of truths, always distrusting them, always alert for another way of thinking. The dangerous thing is certainty. A field that is sure it knows what it is doing is a field that has stopped looking, and a person with no doubt left is not far from a fanatic, or from a member of a cult.
 
 ## How it actually gets settled
 
