@@ -27,6 +27,12 @@ The first is empirical: *the generated code is worse*. That claim is measurable.
 
 The second is cultural: *generated code is not real programming*. That one does not die. It goes quiet, changes costumes, and comes back the next time a machine does something a human used to be paid for.
 
+## We have generated code all along
+
+None of this is new, and it was never really about the machine. We have generated code for decades without a second thought. Nobody ever hand-wrote the thousands of lines of marshalling glue that CORBA's IDL compiler, an RPC stub generator, or a WSDL tool produced for them. Doing it by hand would have been the stupid move, and everyone knew it.
+
+CORBA itself was heavy, genuinely heavy, and most of it did not survive the arrival of REST and HTTP. But that was an architecture losing, not a generation technique failing. The glue was never the problem. The mockery was never really about generation either. It was about *which* code the machine is allowed to write.
+
 ## The part that never went away
 
 Here the story stops being comforting. A part of the distrust was never resolved and never could be, because it was not about quality.
@@ -52,6 +58,8 @@ The failure mode moves, as well. A couple of years ago the complaints were synta
 We remember "AI code is buggy" from not that long ago, and it was true not that long ago. That is the worst kind of belief to hold: recent enough to feel like evidence, old enough to be out of date, exactly like "compilers produce worse code" was for a decade after it stopped being true.
 
 It sticks because of an asymmetry. A bad result confirms the prior ("see, still broken"). A good result gets reassigned to the human who reviewed it ("sure, but I cleaned it up"). You can never win the argument, because the argument is not being decided by evidence.
+
+I have watched this cycle repeat at least once or twice in my own lifetime. I remember saying, around the time of Java 1.1, that code generation was the future, and getting laughed at for it. The tools I was pointing at were clumsy, and most of them died. The direction was right anyway.
 
 ## How it actually gets settled
 
