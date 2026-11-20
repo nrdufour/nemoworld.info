@@ -1,4 +1,6 @@
-# Publish the site to nemoworld, the public web host on Hetzner Cloud.
+# Publish the site to nemosites, the public web host on Hetzner Cloud. That box
+# serves four sites; this one lands in /var/www/nemoworld through the
+# publish-nemoworld account, which is rrsync-locked to that directory.
 #
 # This workflow deliberately contains no deployment logic: it checks out the
 # repo and calls `just publish`, the same recipe run by hand on calypso. One

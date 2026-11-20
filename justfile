@@ -9,8 +9,9 @@
 # from the homelab. The exact same recipe runs by hand and in CI
 # (.forgejo/workflows/publish.yaml).
 
-# Where to publish. Override before the DNS cutover, or to reach a rebuilt
-# box before its records exist:  NEMOWORLD_HOST=203.0.113.10 just publish
+# Where to publish. Override to reach a rebuilt box before its records exist,
+# or to publish to the reserved IP while DNS is in flux:
+#   NEMOWORLD_HOST=203.0.113.10 just publish
 # The account is per-site on the far side (rrsync-locked to /var/www/nemoworld),
 # so a leaked key buys one site, not the box.
 host := env_var_or_default("NEMOWORLD_HOST", "www.nemoworld.info")
