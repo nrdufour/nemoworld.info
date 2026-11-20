@@ -2,13 +2,17 @@
 # Usage: just <command> [args]
 
 # --- Publishing -------------------------------------------------------------
-# The site is served by `nemoworld`, a disposable NixOS box on Hetzner Cloud
-# defined in the avalanche repo. Publishing is a one-way push from here: that
-# host holds no credential of its own, so nothing ever pulls from the homelab.
-# The exact same recipe runs by hand and in CI (.forgejo/workflows/publish.yaml).
+# The site is served by `nemosites`, a disposable NixOS box on Hetzner Cloud
+# defined in the avalanche repo (it also serves nicolasrdufour.info,
+# embryo-systems.info and souk.nemoworld.info). Publishing is a one-way push
+# from here: that host holds no credential of its own, so nothing ever pulls
+# from the homelab. The exact same recipe runs by hand and in CI
+# (.forgejo/workflows/publish.yaml).
 
 # Where to publish. Override before the DNS cutover, or to reach a rebuilt
 # box before its records exist:  NEMOWORLD_HOST=203.0.113.10 just publish
+# The account is per-site on the far side (rrsync-locked to /var/www/nemoworld),
+# so a leaked key buys one site, not the box.
 host := env_var_or_default("NEMOWORLD_HOST", "www.nemoworld.info")
 
 # Private half of the dedicated publish key. A sops secret in avalanche,
@@ -170,7 +174,7 @@ publish:
     # any real edit and far less than a wipe.
     ssh_cmd="ssh -i {{ publish_key }} -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new"
     doomed=$(rsync -rlptcn --delete -v -e "$ssh_cmd" \
-      "$out/" "publish@{{ host }}:" | grep -c '^deleting ' || true)
+      "$out/" "publish-nemoworld@{{ host }}:" | grep -c '^deleting ' || true)
 
     if [ "$doomed" -gt {{ max_delete }} ]; then
       echo >&2
@@ -185,6 +189,6 @@ publish:
     fi
     [ "$doomed" -gt 0 ] && echo "==> will remove $doomed stale file(s)" || true
 
-    rsync -rlptvc --delete -e "$ssh_cmd" "$out/" "publish@{{ host }}:"
+    rsync -rlptvc --delete -e "$ssh_cmd" "$out/" "publish-nemoworld@{{ host }}:"
 
     echo "published to {{ host }}"
