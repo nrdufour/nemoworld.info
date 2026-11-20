@@ -56,6 +56,20 @@ hugo list all
 hugo env
 ```
 
+## Publishing
+
+The site is served by `nemosites`, a disposable NixOS box on Hetzner Cloud
+defined in the avalanche repo. `just publish` builds with `hugo --minify` into a
+temp dir and rsyncs it to `publish-nemoworld@www.nemoworld.info`, an account
+rrsync-locked to `/var/www/nemoworld` — no shell, no reads back out. The same
+recipe runs in CI on every push to `main` (`.forgejo/workflows/publish.yaml`).
+
+The private key is a sops secret in avalanche (`secrets/common-nemoworld-publish`),
+rendered at `/run/secrets/nemoworld/publish_ssh_key` on calypso and on hawk's
+runner. The web host holds only the public half, so a compromise there yields
+nothing back home. `NEMOWORLD_HOST` overrides the target, `NEMOWORLD_MAX_DELETE`
+the dry-run delete cap.
+
 ## Architecture
 
 ### Site Structure
